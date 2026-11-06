@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Cert Prep: CCAO-F & CCAR-P</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/">Claude Cert Prep</a>
+  <nav id="nav" aria-label="Sections">
+    <a href="#/" data-r="">Dashboard</a><a href="#/study" data-r="study">Study</a><a href="#/practice" data-r="practice">Practice</a>
+    <a href="#/mock" data-r="mock">Mock exam</a><a href="#/cards" data-r="cards">Flashcards</a><a href="#/progress" data-r="progress">Progress</a>
+  </nav>
+  <div class="tools">
+    <button id="themeBtn" class="ghost" aria-label="Toggle dark mode" title="Toggle dark mode">Theme</button>
+    <button id="updateBtn" class="update" aria-haspopup="dialog">Update<span id="dot" class="dot" hidden></span></button>
+  </div>
+</header>
+<main id="app" tabindex="-1"></main>
+<dialog id="updateDlg" aria-labelledby="udTitle"><div id="udBody"></div></dialog>
+<script src="assets/app.js"></script>
+</body>
+</html>
