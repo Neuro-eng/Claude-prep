@@ -1,0 +1,29 @@
+{
+  "version": "1.0.2",
+  "changelog": [
+    {
+      "date": "2026-11-06T05:16Z",
+      "version": "1.0.2",
+      "type": "content",
+      "text": "Study content or questions updated (ccao-f 60 q, ccar-p 63 q)."
+    },
+    {
+      "date": "2026-11-06T05:15Z",
+      "version": "1.0.1",
+      "type": "content",
+      "text": "Study content or questions updated (ccao-f 60 q, ccar-p 63 q)."
+    }
+  ],
+  "sources": [],
+  "content_hash": "31bb4ddfa6b5",
+  "built": "2026-11-06T05:16Z",
+  "counts": {
+    "ccao-f": 60,
+    "ccar-p": 63
+  },
+  "dates": {
+    "guide_release": "2026-11-17",
+    "content_change": "2026-12-07",
+    "deadline": "2026-12-11"
+  }
+}
