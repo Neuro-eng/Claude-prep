@@ -1,0 +1,1085 @@
+[
+  {
+    "id": "ccar-p-001",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "single",
+    "question": "An agent needs to read customer records and update orders. Which permission design is best?",
+    "options": {
+      "A": "Let the model decide its own permissions",
+      "B": "Embed API keys in the system prompt",
+      "C": "Least-privilege, scoped credentials; read-only by default, writes gated",
+      "D": "One admin credential shared by all tools"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Least privilege, with gated write actions."
+  },
+  {
+    "id": "ccar-p-002",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "single",
+    "question": "Where should API secrets be handled?",
+    "options": {
+      "A": "In the user message",
+      "B": "In the system prompt",
+      "C": "In a shared doc",
+      "D": "In a secrets manager/environment, never in model context or repos"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Secrets never go through prompts or code."
+  },
+  {
+    "id": "ccar-p-003",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "single",
+    "question": "A RAG assistant gives wrong answers; logs show the correct passage was never retrieved. What should you fix?",
+    "options": {
+      "A": "Increase output length",
+      "B": "Add more context to the prompt",
+      "C": "Use a larger model",
+      "D": "Retrieval: chunking, search config, filters"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Diagnose retrieval vs model; here retrieval failed."
+  },
+  {
+    "id": "ccar-p-004",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "multi",
+    "question": "Select TWO controls that correctly enforce per-user data access in RAG.",
+    "options": {
+      "A": "Hope users ask politely",
+      "B": "Tell the model not to reveal restricted docs",
+      "C": "Filter by the user's permissions before content enters context",
+      "D": "Apply document-level access control at retrieval time"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "Enforcement belongs in the retrieval layer, not the prompt."
+  },
+  {
+    "id": "ccar-p-005",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "single",
+    "question": "A write-action tool call times out; retrying may duplicate the order. Best design?",
+    "options": {
+      "A": "Never retry",
+      "B": "Let the model guess the result",
+      "C": "Use idempotency keys with backoff and surface failures clearly",
+      "D": "Retry blindly"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Idempotency + backoff makes retries safe."
+  },
+  {
+    "id": "ccar-p-006",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "single",
+    "question": "Why does MCP matter when integrating many internal systems?",
+    "options": {
+      "A": "It removes the need for permissions",
+      "B": "It makes models smarter",
+      "C": "A standard protocol to expose tools/data reduces bespoke glue and enables reuse",
+      "D": "It replaces evals"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Standardised tool/data connectivity."
+  },
+  {
+    "id": "ccar-p-007",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "A task has fixed, known steps and needs reliability. What is the best architecture?",
+    "options": {
+      "A": "Human only",
+      "B": "Deterministic workflow / prompt chain",
+      "C": "Autonomous multi-agent system",
+      "D": "Single prompt with no structure"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Known steps → workflow; use the simplest pattern that meets the need."
+  },
+  {
+    "id": "ccar-p-008",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "When does a multi-agent design make most sense?",
+    "options": {
+      "A": "Always, for better quality",
+      "B": "For simple classification",
+      "C": "When subtasks are parallel/independent or need isolated contexts and the benefit outweighs cost and coordination risk",
+      "D": "When there is no time to design"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Multi-agent adds cost and failure modes; justify it."
+  },
+  {
+    "id": "ccar-p-009",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "A client asks for 'an agent' to extract 5 fields from invoices. Best recommendation?",
+    "options": {
+      "A": "A single structured LLM call (possibly a small model) with schema validation",
+      "B": "Manual entry",
+      "C": "Fine-tune a model",
+      "D": "Multi-agent swarm"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "Simplest design that meets the requirement."
+  },
+  {
+    "id": "ccar-p-010",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "Before proposing an architecture, you should first:",
+    "options": {
+      "A": "Choose the model",
+      "B": "Select the cloud provider",
+      "C": "Build a prototype agent",
+      "D": "Agree measurable success criteria and constraints with the stakeholders"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Discovery and success criteria come first."
+  },
+  {
+    "id": "ccar-p-011",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "single",
+    "question": "Which grader is best for validating that output is valid JSON matching a schema?",
+    "options": {
+      "A": "LLM-as-judge",
+      "B": "Code-based grader (schema validation)",
+      "C": "User survey",
+      "D": "Human review of every item"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Objective, verifiable checks → code graders."
+  },
+  {
+    "id": "ccar-p-012",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "single",
+    "question": "You introduce an LLM-as-judge for tone. What must you do?",
+    "options": {
+      "A": "Trust it blindly",
+      "B": "Provide a clear rubric and calibrate against human labels",
+      "C": "Skip humans entirely",
+      "D": "Use the same model without a rubric"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Calibrate judges against human ratings."
+  },
+  {
+    "id": "ccar-p-013",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "single",
+    "question": "After a prompt change, overall score rises but one customer segment drops. Best action?",
+    "options": {
+      "A": "Revert without looking",
+      "B": "Ignore the segment",
+      "C": "Analyse by segment, investigate the regression, then decide",
+      "D": "Ship it"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Segmented analysis and regression testing."
+  },
+  {
+    "id": "ccar-p-014",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "multi",
+    "question": "Select TWO elements of a good eval dataset.",
+    "options": {
+      "A": "Only easy cases",
+      "B": "Edge and adversarial cases",
+      "C": "One example per feature",
+      "D": "Cases added from real production failures"
+    },
+    "answer": [
+      "B",
+      "D"
+    ],
+    "explanation": "Representative + edge + production-derived failures."
+  },
+  {
+    "id": "ccar-p-015",
+    "domain": 4,
+    "domain_name": "Governance & safety",
+    "type": "single",
+    "question": "A hospital requires that Claude never exposes PHI to unauthorised staff. Best approach?",
+    "options": {
+      "A": "Trust the model",
+      "B": "Tell users not to ask",
+      "C": "Implement access controls, filtering and audit logging in the system; BAA with the vendor; plus HITL where needed",
+      "D": "Add 'never share PHI' to the system prompt"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Compliance needs real controls, not a line in the prompt."
+  },
+  {
+    "id": "ccar-p-016",
+    "domain": 4,
+    "domain_name": "Governance & safety",
+    "type": "single",
+    "question": "Which action should always have human approval?",
+    "options": {
+      "A": "Summarising public docs",
+      "B": "Translating a paragraph internally",
+      "C": "Formatting text",
+      "D": "Issuing refunds above a defined threshold or other irreversible financial actions"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "High-impact irreversible actions need approval gates."
+  },
+  {
+    "id": "ccar-p-017",
+    "domain": 4,
+    "domain_name": "Governance & safety",
+    "type": "single",
+    "question": "A prompt-injection incident is detected in production. Correct sequence?",
+    "options": {
+      "A": "Ignore → wait",
+      "B": "Blame the user",
+      "C": "Contain (revoke/kill switch) → investigate logs → remediate → notify as required → add cases to evals",
+      "D": "Rewrite the prompt only"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Standard incident response, feeding learnings back to evals."
+  },
+  {
+    "id": "ccar-p-018",
+    "domain": 5,
+    "domain_name": "Stakeholders & lifecycle",
+    "type": "single",
+    "question": "The client wants to start building immediately. You lack baselines and success metrics. Best response?",
+    "options": {
+      "A": "Ship a demo to impress",
+      "B": "Start building",
+      "C": "Run discovery: define goals, baseline, success criteria and risks first",
+      "D": "Pick the best model"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Skipping discovery is a classic anti-pattern."
+  },
+  {
+    "id": "ccar-p-019",
+    "domain": 5,
+    "domain_name": "Stakeholders & lifecycle",
+    "type": "single",
+    "question": "How should you explain a trade-off between accuracy and cost to a business sponsor?",
+    "options": {
+      "A": "Avoid discussing it",
+      "B": "Express it in business terms (risk, cost, time, value) with options and a recommendation",
+      "C": "Use token-level jargon",
+      "D": "Pick one without telling them"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Translate technical trade-offs into business impact."
+  },
+  {
+    "id": "ccar-p-020",
+    "domain": 5,
+    "domain_name": "Stakeholders & lifecycle",
+    "type": "single",
+    "question": "A prompt change will go to production. Which lifecycle practice applies?",
+    "options": {
+      "A": "Let users test it",
+      "B": "Version it, regression-test against evals, gated release with rollback plan",
+      "C": "Announce by email only",
+      "D": "Edit live"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Change control for prompts/models/tools."
+  },
+  {
+    "id": "ccar-p-021",
+    "domain": 6,
+    "domain_name": "Models, prompting & context",
+    "type": "single",
+    "question": "Which statement about model selection is correct?",
+    "options": {
+      "A": "Always use the cheapest",
+      "B": "Use whichever was used last",
+      "C": "Always use the most powerful model",
+      "D": "Choose by capability, cost and speed, justified by evals; smaller models often suffice"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Right-size the model to the task."
+  },
+  {
+    "id": "ccar-p-022",
+    "domain": 6,
+    "domain_name": "Models, prompting & context",
+    "type": "single",
+    "question": "An app sends the same 20k-token policy document with every request. Best optimisation?",
+    "options": {
+      "A": "Shorten answers",
+      "B": "Use prompt caching with the stable prefix first",
+      "C": "Retrain the model",
+      "D": "Remove the document"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Cache the static prefix to cut cost and latency."
+  },
+  {
+    "id": "ccar-p-023",
+    "domain": 6,
+    "domain_name": "Models, prompting & context",
+    "type": "single",
+    "question": "Answers are poor because the model is given 50 loosely related chunks. Best fix?",
+    "options": {
+      "A": "Improve retrieval/reranking so only relevant context is included",
+      "B": "Add even more chunks",
+      "C": "Use a larger window only",
+      "D": "Lower the temperature"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "Context engineering: relevance over volume."
+  },
+  {
+    "id": "ccar-p-024",
+    "domain": 7,
+    "domain_name": "Developer productivity",
+    "type": "single",
+    "question": "Which is the safest practice for Claude in a shared CI pipeline?",
+    "options": {
+      "A": "Disable logging",
+      "B": "Give it production credentials for convenience",
+      "C": "Run as root",
+      "D": "Least-privilege permissions, allow-listed commands, sandboxed runner, review before merge"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Safe permissions in shared/CI environments."
+  },
+  {
+    "id": "ccar-p-025",
+    "domain": 7,
+    "domain_name": "Developer productivity",
+    "type": "single",
+    "question": "A team wants consistent Claude behaviour on a repository. Best approach?",
+    "options": {
+      "A": "Email instructions weekly",
+      "B": "Use no guidance",
+      "C": "Each dev writes their own prompts",
+      "D": "Commit shared project guidance/settings and keep personal prefs local"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Shared, versioned project settings."
+  },
+  {
+    "id": "ccar-p-026",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "single",
+    "question": "Two MCP tools both read 'customer data' and have near-identical descriptions; the agent keeps picking the wrong one. Best fix?",
+    "options": {
+      "A": "Remove all descriptions",
+      "B": "Use a bigger model only",
+      "C": "Rewrite the tool descriptions to be distinct and precise, or merge the tools",
+      "D": "Add 'pick correctly' to the prompt"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Tool descriptions drive selection; ambiguity causes misuse."
+  },
+  {
+    "id": "ccar-p-027",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "single",
+    "question": "A third-party API returns 429 errors during peak load. Best handling?",
+    "options": {
+      "A": "Exponential backoff with jitter, plus rate limiting or queueing on your side",
+      "B": "Retry instantly in a tight loop",
+      "C": "Ignore the error",
+      "D": "Let the model invent a response"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "Backoff and rate management protect both systems."
+  },
+  {
+    "id": "ccar-p-028",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "single",
+    "question": "Which RAG change most directly helps both keyword-specific and semantic queries?",
+    "options": {
+      "A": "Longer prompts",
+      "B": "Lower temperature",
+      "C": "Bigger chunks only",
+      "D": "Hybrid search (keyword plus embeddings) with reranking"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Hybrid search plus reranking improves recall and precision."
+  },
+  {
+    "id": "ccar-p-029",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "multi",
+    "question": "A tool call fails. What should the agent do with the failure?",
+    "options": {
+      "A": "never fabricate a result",
+      "B": "Hide it from logs",
+      "C": "Retry forever",
+      "D": "Surface the error clearly and handle it",
+      "E": "Pretend it succeeded"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "Failures must be visible and handled safely."
+  },
+  {
+    "id": "ccar-p-030",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "multi",
+    "question": "Select TWO secure ways to give an integration its credentials.",
+    "options": {
+      "A": "Environment-injected short-lived tokens",
+      "B": "Commit the key to the repo",
+      "C": "Hard-code keys in the prompt",
+      "D": "Secrets manager with scoped, rotating credentials"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "Keep secrets out of model context and repos; scope and rotate."
+  },
+  {
+    "id": "ccar-p-031",
+    "domain": 1,
+    "domain_name": "Integration",
+    "type": "single",
+    "question": "An internal knowledge base is updated hourly. What matters most for RAG correctness?",
+    "options": {
+      "A": "Using a bigger model",
+      "B": "Freshness: re-indexing or incremental updates with versioning",
+      "C": "Shorter answers",
+      "D": "More examples in the prompt"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Stale indexes produce stale answers."
+  },
+  {
+    "id": "ccar-p-032",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "Requirement: classify inbound emails into 6 categories at high volume and low cost. Best design?",
+    "options": {
+      "A": "Autonomous agent with web access",
+      "B": "Fine-tune immediately",
+      "C": "Multi-agent debate",
+      "D": "Single call to a small model with a strict schema, validated by an eval set"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Simplest viable design wins."
+  },
+  {
+    "id": "ccar-p-033",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "Open-ended research tasks with an unpredictable number of steps. Which pattern fits?",
+    "options": {
+      "A": "A single prompt",
+      "B": "An agent with defined tools, limits and checkpoints",
+      "C": "Manual only",
+      "D": "A rigid 3-step chain"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Unpredictable paths justify an agent, with guardrails."
+  },
+  {
+    "id": "ccar-p-034",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "A task's parts are independent and each needs a large separate context. Best structure?",
+    "options": {
+      "A": "Random assignment",
+      "B": "Only a single prompt",
+      "C": "Orchestrator with parallel sub-agents, aggregating results",
+      "D": "One agent doing all sequentially in one context"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Context isolation and parallelism justify subagents."
+  },
+  {
+    "id": "ccar-p-035",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "Which is a real downside of multi-agent systems?",
+    "options": {
+      "A": "They cannot call tools",
+      "B": "They always need fine-tuning",
+      "C": "Higher token cost and added coordination failure modes",
+      "D": "They remove the need for evals"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Multi-agent adds cost and complexity."
+  },
+  {
+    "id": "ccar-p-036",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "A client wants a nightly bulk summarisation of 200k documents, no urgency. What optimisation fits?",
+    "options": {
+      "A": "Batch processing, possibly with prompt caching",
+      "B": "Streaming UI",
+      "C": "Real-time agent per document",
+      "D": "Human summarisation"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "Non-urgent bulk work suits batch for cost savings."
+  },
+  {
+    "id": "ccar-p-037",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "multi",
+    "question": "Select TWO design elements that make an agent safer to run.",
+    "options": {
+      "A": "Hidden actions with no logs",
+      "B": "Unlimited autonomy",
+      "C": "Human approval for irreversible actions",
+      "D": "Step and budget limits"
+    },
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": "Limits and approvals bound risk."
+  },
+  {
+    "id": "ccar-p-038",
+    "domain": 2,
+    "domain_name": "Solution design",
+    "type": "single",
+    "question": "Before choosing between workflow and agent, what do you need?",
+    "options": {
+      "A": "Clear requirements and success criteria, including risk and latency needs",
+      "B": "A model release date",
+      "C": "A logo",
+      "D": "The largest context window"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "Requirements drive architecture."
+  },
+  {
+    "id": "ccar-p-039",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "single",
+    "question": "You need to check that a generated SQL query returns the expected rows. Best grader?",
+    "options": {
+      "A": "None",
+      "B": "Code-based: execute against a test database and compare",
+      "C": "Human vote",
+      "D": "LLM-as-judge on style"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Executable, objective checks beat judgement here."
+  },
+  {
+    "id": "ccar-p-040",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "single",
+    "question": "A summarisation app's quality is subjective. Which approach scales best?",
+    "options": {
+      "A": "Only developer opinion",
+      "B": "No evaluation",
+      "C": "Exact string match",
+      "D": "LLM-as-judge with a rubric, calibrated on a human-labelled sample"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Calibrated LLM judges scale subjective grading."
+  },
+  {
+    "id": "ccar-p-041",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "single",
+    "question": "Production users report a new failure type. Best use of it?",
+    "options": {
+      "A": "Delete the report",
+      "B": "Add it to the eval set and regression-test fixes",
+      "C": "Edit the prompt blindly",
+      "D": "Dismiss as rare"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "Production failures should feed the eval dataset."
+  },
+  {
+    "id": "ccar-p-042",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "single",
+    "question": "Quality dropped after switching model versions. What process would have caught it?",
+    "options": {
+      "A": "Checking one example",
+      "B": "Waiting for tickets",
+      "C": "Running the regression eval suite before release",
+      "D": "Hoping"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Evals gate model/prompt changes."
+  },
+  {
+    "id": "ccar-p-043",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "multi",
+    "question": "Select TWO signs a metric is well chosen.",
+    "options": {
+      "A": "It ties to the business outcome",
+      "B": "It can be measured consistently",
+      "C": "It is easy to inflate",
+      "D": "Nobody understands it"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Good metrics are tied to value and measurable reliably."
+  },
+  {
+    "id": "ccar-p-044",
+    "domain": 3,
+    "domain_name": "Evaluation & testing",
+    "type": "multi",
+    "question": "Aggregate accuracy is 92% but one high-value segment is at 60%. Right reading?",
+    "options": {
+      "A": "investigate by segment",
+      "B": "Lower the bar",
+      "C": "The aggregate hides a serious segment problem",
+      "D": "Segments never matter",
+      "E": "Success, ship it"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "Segment analysis reveals hidden failures."
+  },
+  {
+    "id": "ccar-p-045",
+    "domain": 4,
+    "domain_name": "Governance & safety",
+    "type": "single",
+    "question": "A bank requires an audit trail for every AI-assisted decision. Best control?",
+    "options": {
+      "A": "Rely on chat history",
+      "B": "Skip logging for privacy",
+      "C": "Add 'be auditable' to the prompt",
+      "D": "Log inputs, outputs, tool calls and approver identity immutably"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Auditability needs real logging infrastructure."
+  },
+  {
+    "id": "ccar-p-046",
+    "domain": 4,
+    "domain_name": "Governance & safety",
+    "type": "single",
+    "question": "Where should output moderation for a public chatbot sit?",
+    "options": {
+      "A": "As a separate validation layer in code that checks responses before display",
+      "B": "Only in the system prompt",
+      "C": "Only in user training",
+      "D": "Nowhere"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "Guardrails belong in enforced layers."
+  },
+  {
+    "id": "ccar-p-047",
+    "domain": 4,
+    "domain_name": "Governance & safety",
+    "type": "single",
+    "question": "Under GDPR-style principles, which practice is most aligned?",
+    "options": {
+      "A": "Send entire databases for convenience",
+      "B": "Retain everything forever",
+      "C": "Ignore deletion requests",
+      "D": "Data minimisation: send only the personal data the task needs"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Minimisation and purpose limitation."
+  },
+  {
+    "id": "ccar-p-048",
+    "domain": 4,
+    "domain_name": "Governance & safety",
+    "type": "single",
+    "question": "A vendor will process PHI. What is required before proceeding (HIPAA context)?",
+    "options": {
+      "A": "A marketing brochure",
+      "B": "A business associate agreement and appropriate safeguards",
+      "C": "Nothing",
+      "D": "A verbal promise"
+    },
+    "answer": [
+      "B"
+    ],
+    "explanation": "BAAs are required for vendors handling PHI."
+  },
+  {
+    "id": "ccar-p-049",
+    "domain": 4,
+    "domain_name": "Governance & safety",
+    "type": "single",
+    "question": "An agent can send external emails. Which control is most appropriate?",
+    "options": {
+      "A": "Human approval or strict allow-lists before sending",
+      "B": "Let it send freely",
+      "C": "Hide the tool",
+      "D": "Rely on a polite system prompt"
+    },
+    "answer": [
+      "A"
+    ],
+    "explanation": "Gate externally visible irreversible actions."
+  },
+  {
+    "id": "ccar-p-050",
+    "domain": 4,
+    "domain_name": "Governance & safety",
+    "type": "multi",
+    "question": "Select TWO incident-response steps after discovering an agent leaked data.",
+    "options": {
+      "A": "Investigate using logs and notify as required",
+      "B": "Delete the logs",
+      "C": "Contain: revoke credentials or disable the tool",
+      "D": "Wait to see if it repeats"
+    },
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": "Contain, investigate, and notify; preserve evidence."
+  },
+  {
+    "id": "ccar-p-051",
+    "domain": 5,
+    "domain_name": "Stakeholders & lifecycle",
+    "type": "single",
+    "question": "A sponsor says 'just make it work like magic'. First step?",
+    "options": {
+      "A": "Agree to everything",
+      "B": "Pick an LLM",
+      "C": "Run discovery to translate goals into measurable success criteria and constraints",
+      "D": "Start coding"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Discovery and measurable criteria come first."
+  },
+  {
+    "id": "ccar-p-052",
+    "domain": 5,
+    "domain_name": "Stakeholders & lifecycle",
+    "type": "single",
+    "question": "Legal is worried about data risk and is blocking the project. Best approach?",
+    "options": {
+      "A": "Bypass legal",
+      "B": "Escalate to ignore them",
+      "C": "Engage early, show controls and evidence, and propose a staged scope",
+      "D": "Hide the data flows"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Collaborate and evidence controls."
+  },
+  {
+    "id": "ccar-p-053",
+    "domain": 5,
+    "domain_name": "Stakeholders & lifecycle",
+    "type": "single",
+    "question": "How should a pilot be structured?",
+    "options": {
+      "A": "Open-ended with no metrics",
+      "B": "Launch to all customers",
+      "C": "Defined scope, success metrics and exit criteria agreed upfront",
+      "D": "No owner"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Pilots need measurable exit criteria."
+  },
+  {
+    "id": "ccar-p-054",
+    "domain": 5,
+    "domain_name": "Stakeholders & lifecycle",
+    "type": "single",
+    "question": "The model provider announces a deprecation. How should this be treated?",
+    "options": {
+      "A": "As irrelevant",
+      "B": "As a surprise to react to later",
+      "C": "As a planned change: assess, test with evals, schedule migration and rollback",
+      "D": "As a reason to cancel evals"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Plan model lifecycle changes."
+  },
+  {
+    "id": "ccar-p-055",
+    "domain": 5,
+    "domain_name": "Stakeholders & lifecycle",
+    "type": "single",
+    "question": "Which is the best way to present options to executives?",
+    "options": {
+      "A": "A 60-page appendix",
+      "B": "Token-level metrics only",
+      "C": "2–3 options with trade-offs in cost, risk and value, plus a recommendation",
+      "D": "A single option, no rationale"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Business-term trade-offs and a recommendation."
+  },
+  {
+    "id": "ccar-p-056",
+    "domain": 5,
+    "domain_name": "Stakeholders & lifecycle",
+    "type": "multi",
+    "question": "Select TWO lifecycle practices after release.",
+    "options": {
+      "A": "Schedule periodic reviews and re-evaluation",
+      "B": "Monitor quality, cost and incidents",
+      "C": "Stop monitoring after launch",
+      "D": "Change prompts without records"
+    },
+    "answer": [
+      "A",
+      "B"
+    ],
+    "explanation": "Operate and improve continuously."
+  },
+  {
+    "id": "ccar-p-057",
+    "domain": 6,
+    "domain_name": "Models, prompting & context",
+    "type": "single",
+    "question": "A support bot is slow and costly because every request resends a long static policy. Best fix?",
+    "options": {
+      "A": "Remove the policy",
+      "B": "Use larger output",
+      "C": "Retrain the model",
+      "D": "Prompt caching with the static content at the start of the prompt"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Cache the stable prefix."
+  },
+  {
+    "id": "ccar-p-058",
+    "domain": 6,
+    "domain_name": "Models, prompting & context",
+    "type": "single",
+    "question": "For reliable multi-step math or logic, which technique helps?",
+    "options": {
+      "A": "Higher randomness",
+      "B": "Shorter prompts only",
+      "C": "Chain-of-thought or extended thinking, validated by checks",
+      "D": "Removing instructions"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Reasoning techniques improve multi-step accuracy."
+  },
+  {
+    "id": "ccar-p-059",
+    "domain": 6,
+    "domain_name": "Models, prompting & context",
+    "type": "single",
+    "question": "Which prompt layout is generally better with a very long document?",
+    "options": {
+      "A": "Random order",
+      "B": "No delimiters",
+      "C": "Question buried in the middle",
+      "D": "Place the document first, with the question and instructions after it"
+    },
+    "answer": [
+      "D"
+    ],
+    "explanation": "Long content first, clear delimiters, then the ask."
+  },
+  {
+    "id": "ccar-p-060",
+    "domain": 6,
+    "domain_name": "Models, prompting & context",
+    "type": "multi",
+    "question": "Select TWO benefits of few-shot examples.",
+    "options": {
+      "A": "More consistent output format",
+      "B": "Guaranteed correctness",
+      "C": "Free of cost",
+      "D": "Better alignment to desired style"
+    },
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": "Examples steer format and style, not guarantee truth."
+  },
+  {
+    "id": "ccar-p-061",
+    "domain": 6,
+    "domain_name": "Models, prompting & context",
+    "type": "single",
+    "question": "A chat agent's history grows until quality degrades. Best context technique?",
+    "options": {
+      "A": "Increase temperature",
+      "B": "Delete the system prompt",
+      "C": "Summarise or compact history and retrieve details just in time",
+      "D": "Keep everything forever"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Context management prevents dilution."
+  },
+  {
+    "id": "ccar-p-062",
+    "domain": 7,
+    "domain_name": "Developer productivity",
+    "type": "single",
+    "question": "Which hook-style practice best enforces code-quality rules in team workflows?",
+    "options": {
+      "A": "A reminder email",
+      "B": "Instruction text only",
+      "C": "Automated checks (lint, tests, secret scanning) run as hooks or CI gates",
+      "D": "Trusting memory"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Enforce with automation, not only instructions."
+  },
+  {
+    "id": "ccar-p-063",
+    "domain": 7,
+    "domain_name": "Developer productivity",
+    "type": "single",
+    "question": "A new team is adopting Claude for engineering. Best rollout step?",
+    "options": {
+      "A": "No training",
+      "B": "Disable logging",
+      "C": "Pilot with a small group, gather feedback and measure usage and cost",
+      "D": "Mandate for all on day one"
+    },
+    "answer": [
+      "C"
+    ],
+    "explanation": "Staged rollout with feedback and monitoring."
+  }
+]
