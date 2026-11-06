@@ -1,0 +1,36 @@
+front,back
+CCAR-P: questions / time / fee / pass?,"63 q, 120 min, $175, scaled 720/1000"
+CCAR-P domain weights?,"Integration 19, Design 17, Eval 16, Governance 14, Stakeholders 14, Models/Prompting 13, DevProd 7"
+Complexity ladder?,Single call < workflow < agent < multi-agent: choose lowest that works
+When multi-agent?,Parallel/independent subtasks or isolated contexts where benefit outweighs cost and coordination risk
+Workflow vs agent?,Workflow = code-controlled known steps; agent = model chooses steps dynamically
+MCP exposes what?,"Tools, resources, prompts from servers to clients"
+Least privilege?,Minimum scoped permissions; read-only default; gated writes
+Where do secrets live?,"Secrets manager/env: never in prompts, context, repos"
+RAG failure first check?,Was the right chunk retrieved? (retrieval vs model)
+RAG access control?,"Enforce per-user ACLs at retrieval, not in the prompt"
+RAG quality levers?,"Chunking, embeddings, hybrid search, metadata filters, reranking, freshness"
+Safe retries?,Exponential backoff + jitter; idempotency keys for writes; circuit breakers
+Code grader best for?,"Objective, verifiable outputs (schema, exact match, tests)"
+LLM-as-judge needs?,Clear rubric and calibration against human labels
+Human review role?,"Gold standard, calibration, high-stakes"
+Good eval dataset?,Typical + edge + adversarial + production-failure cases
+Retrieval vs model issue?,Info missing from context = retrieval; info present but wrong answer = prompt/model
+Regression testing?,Re-run evals after every prompt/model/retrieval change; segment results
+Compliance principle?,"Real controls (access, logging, validation); a prompt line is not enough"
+Guardrail placement?,In code/infrastructure at trust boundaries; layered
+GDPR essentials?,"Lawful basis, minimisation, purpose limitation, subject rights, transfers"
+HIPAA essentials?,"PHI safeguards, BAA, minimum necessary, audit controls"
+Incident response order?,"Detect, contain, investigate, remediate, notify, post-mortem, add to evals"
+Discovery covers?,"Goals, users, process, data, constraints, risk, baseline, success criteria"
+Expectation setting?,Probabilistic systems; pilot with exit criteria; business-term trade-offs
+Change control?,Version prompts/models/tools; regression-test; gated release; rollback
+Model selection basis?,"Capability, cost, speed: justified by evals; not always the biggest"
+Prompt caching?,"Cache stable prefix to cut cost/latency; static first, variable last"
+Context engineering?,"Relevant context only, ordered well; summarise/compact; isolate with subagents"
+Classic wrong answers?,Biggest model always; agent when workflow works; prompt-only compliance; more context for retrieval problems; build before discovery
+Safe CI permissions?,"Least privilege, allow-lists, sandbox, no prod creds, review before merge"
+Shared team config?,Commit shared project guidance; keep personal prefs local
+Extended thinking / CoT use?,Multi-step reasoning tasks; trade latency/cost for accuracy
+Batch processing use?,Non-urgent bulk workloads for lower cost
+Credential validity/renewal?,12 months; free non-proctored renewal if on time; lapse = full exam again

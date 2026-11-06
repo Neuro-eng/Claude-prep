@@ -1,0 +1,34 @@
+front,back
+CCAO-F: questions / time / pass score?,"60 questions, 120 min, scaled 720/1000 (not 72%)"
+CCAO-F fee and validity?,$99; valid 12 months (free renewal assessment if on time)
+Retake waits?,"14 days, then 30, then 90; max 4 attempts per rolling 12 months"
+Is the Associate exam about SDK/API coding?,"No: workplace use of Claude (Projects, Artifacts, prompting, governance)"
+What does RCGCF stand for?,"Role, Context, Goal, Constraints, Format"
+Best first step when Claude states an unverified fact?,Verify against a canonical source
+Is asking Claude 'are you sure?' verification?,No
+What is a hallucination?,"Plausible but fabricated content (invented facts, citations, quotes)"
+Highest hallucination-risk content?,"Specific numbers, citations, quotes, legal/medical claims, niche facts"
+How to ground Claude in a document?,"Provide it, say answer only from it, require quotes, allow 'not found'"
+When is HITL mandatory?,"High-stakes, irreversible, regulated, externally published, or materially affecting people"
+Automate vs augment vs human-only?,Automate = repetitive low-risk verifiable; augment = judgement; human-only = high-stakes/ambiguous
+Why prompt chaining?,Checkpoints per stage; easier debugging
+What belongs in a prompt library entry?,"Template with placeholders, usage notes, owner, version, review checklist"
+Direct prompt injection?,User directly types instructions to override Claude's behaviour
+Indirect prompt injection?,"Malicious instructions hidden in content Claude reads (web, email, docs)"
+Defence vs injection?,Treat external content as untrusted data; limit permissions; approve sensitive actions
+Before using client data with AI?,Classify it and redact PII/PHI per policy
+Why use XML tags in prompts?,Separate instructions from content; reduce ambiguity
+What does few-shot do?,Shows examples to lock in format/style/consistency
+Haiku-class model best for?,"Fast, cheap, high-volume simple tasks"
+Sonnet-class model best for?,Balanced default for most workplace tasks
+Opus-class model best for?,"Hard, nuanced, multi-step reasoning"
+Model selection rule?,Match model to task; don't default to the biggest
+When to use an Artifact?,"Substantial standalone reusable output (doc, page, tool), not short replies"
+Project custom instructions vs knowledge?,Instructions = persistent behaviour rules; knowledge = reference files
+What is context dilution?,Too much loosely relevant material weakens focus and quality
+Knowledge base anti-patterns?,Outdated/duplicate/contradictory files; kitchen-sink uploads; unsanitised data
+Long chat drifting?,Start a new chat with a summary of constraints and decisions
+Troubleshooting method?,Diagnose cause; change one variable at a time
+Can you use AI during the exam?,No: banned; closed book
+Multi-response question scoring?,Assume no partial credit; select exactly N
+Blank answers?,No negative marking; never leave blank
