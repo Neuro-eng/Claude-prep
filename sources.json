@@ -1,0 +1,12 @@
+{
+  "_help": "Pages the watcher checks daily. 'keywords' (optional) keeps only matching lines so unrelated site changes don't trigger. Partner-portal pages that need a login are reported as 'login-required' (use the inbox/ PDF route for those).",
+  "sources": [
+    {"id": "anthropic-news", "name": "Anthropic news", "url": "https://www.anthropic.com/news",
+     "keywords": ["certif", "CCAR", "CCAO", "CCDV", "partner network", "exam"]},
+    {"id": "partner-certifications", "name": "Partner Academy: Certifications", "url": "https://anthropic-partners.skilljar.com/page/partner-certifications"},
+    {"id": "partner-faq", "name": "Partner Academy: Certification FAQ", "url": "https://anthropic-partners.skilljar.com/page/faq-certifications"},
+    {"id": "partner-eligibility", "name": "Partner Academy: Eligibility", "url": "https://anthropic-partners.skilljar.com/page/certification-eligibility"},
+    {"id": "claude-models", "name": "Claude models overview", "url": "https://docs.claude.com/en/docs/about-claude/models",
+     "keywords": ["claude-", "Haiku", "Sonnet", "Opus", "Fable", "Mythos"]}
+  ]
+}
