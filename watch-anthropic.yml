@@ -1,0 +1,44 @@
+name: Watch Anthropic for exam updates
+on:
+  schedule:
+    - cron: "17 3 * * *"        # daily, 03:17 UTC
+  workflow_dispatch:             # "Run workflow" button, also used by the site's Update panel link
+permissions:
+  contents: write
+  issues: write
+  actions: write
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install markdown pypdf
+      - name: Check sources
+        id: watch
+        run: python scripts/watch_sources.py
+      - name: Rebuild site data
+        run: python scripts/build_site.py
+      - name: Commit state + manifest
+        id: commit
+        run: |
+          git config user.name  "cert-prep-bot"
+          git config user.email "cert-prep-bot@users.noreply.github.com"
+          git add state site/data
+          if git diff --cached --quiet; then echo "pushed=false" >> "$GITHUB_OUTPUT"; else
+            git commit -m "chore: source watch $(date -u +%F) [skip ci]" && git push && echo "pushed=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Open issue when a source changed
+        if: steps.watch.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const ids = '${{ steps.watch.outputs.ids }}';
+            await github.rest.issues.create({ ...context.repo,
+              title: `Anthropic source changed: ${ids}`,
+              labels: ['exam-update'],
+              body: `The watcher detected a change on: **${ids}**.\n\n1. Read the diff in \`state/changes/\`.\n2. Download the latest Exam Guide PDF(s) from the Partner Academy and drop them into \`inbox/\` (this triggers the AI-draft PR), or edit notes manually.\n3. Review, then merge.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}` });
+      - name: Redeploy site
+        if: steps.commit.outputs.pushed == 'true'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh workflow run pages.yml

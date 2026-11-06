@@ -1,0 +1,38 @@
+name: AI draft update (human-reviewed PR)
+# Triggered when you drop a new Exam Guide into inbox/ (Skilljar needs a login, so CI can't download it),
+# or manually. Needs repo secret ANTHROPIC_API_KEY. Output is a PULL REQUEST: never auto-merged.
+on:
+  push:
+    branches: [main]
+    paths: ["inbox/**"]
+  workflow_dispatch:
+    inputs:
+      exam: { description: "ccao-f | ccar-p | both", default: "both" }
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install markdown pypdf
+      - name: Draft updates with Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY not set; skipping AI draft"; exit 0; fi
+          python scripts/ai_refresh.py --exam "${{ github.event.inputs.exam || 'both' }}"
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          branch: ai/exam-refresh
+          title: "AI draft: exam material update (review before merging)"
+          commit-message: "docs: AI-drafted exam update (needs review)"
+          labels: exam-update
+          body: |
+            Drafted by Claude from new source material in `inbox/` / detected page changes.
+            **Check everything against the official Exam Guide.**
+            - Read `ai-reports/` for the change summary.
+            - Verify draft questions in `questions/pending/`, then run `python scripts/approve_pending.py <file>` to publish them.
