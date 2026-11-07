@@ -5,7 +5,12 @@ import csv, hashlib, json, pathlib, datetime, re
 import markdown
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-MD = lambda t: markdown.markdown(t, extensions=["tables", "fenced_code", "sane_lists"])
+def MD(t):
+    t = t.replace("<details>", '<details markdown="1">')
+    h = markdown.markdown(t, extensions=["tables", "fenced_code", "sane_lists", "md_in_html"])
+    # plain URLs become links; all external links open in a new tab
+    h = re.sub(r'(?<!["=\w/])(https?://[^\s<)]+)(?![^<]*</a>)', r'<a href="\1">\1</a>', h)
+    return re.sub(r'<a href="(https?://[^"]+)"', r'<a target="_blank" rel="noopener" href="\1"', h)
 
 EXAMS = {
   "ccao-f": dict(title="CCAO-F", full="Claude Certified Associate – Foundations", exam_items=60, minutes=120, fee="$99"),
