@@ -1,0 +1,86 @@
+Who can take a Claude certification exam
+Back
+Header Navigation
+Home
+Courses
+All courses
+All learning paths
+Claude Associate
+Claude Developer
+Claude Architect
+Claude Forward Deployed Engineer
+Certifications and badges
+All certifications and badges
+Who can take an exam
+Associate – Foundations
+Developer – Foundations
+Architect – Foundations
+Architect – Professional
+Claude Code partner badge
+Exam prep courses
+Computer and Network Setup
+Certification FAQ
+Webinars
+Partner Hub
+Sign In
+Home
+Courses
+All courses
+All learning paths
+Claude Associate
+Claude Developer
+Claude Architect
+Claude Forward Deployed Engineer
+Certifications and badges
+All certifications and badges
+Who can take an exam
+Associate – Foundations
+Developer – Foundations
+Architect – Foundations
+Architect – Professional
+Claude Code partner badge
+Exam prep courses
+Computer and Network Setup
+Certification FAQ
+Webinars
+Partner Hub
+Sign In
+Home / Certifications and badges / Who can take an exam
+Certification
+Who can take a Claude certification exam
+Claude certification exams are open to people who work at organizations in the Claude Partner Network.
+Not sure? Ask the person who manages your organization’s Anthropic partnership, or email partner-support@anthropic.com.
+Yes, my organization is in the Claude Partner Network
+You can register. Sign in with a company email on a domain listed in your organization’s partner record, because a personal address won’t work. Then choose your exam on the certifications page, and pay there. Anthropic then emails you a Pearson VUE link to book your slot, either online with a proctor or at a test center. To sit the exam, you need to be 18 or older and have a government-issued ID.
+If sign-in or checkout doesn’t recognize your email, the usual cause is that your domain isn’t on your organization’s partner record yet. Email partner-support@anthropic.com to have it added, which usually takes 7 to 10 days.
+No, my organization isn’t in the Claude Partner Network
+You can’t register for a certification exam. Claude Academy is public and teaches Claude, Claude Code, and building with the Claude API. Its courses end with a quiz, and passing earns a certificate of completion you can share.
+If you administer Claude for your organization and people ask about certification, point them to Claude Academy. Your Anthropic account team can also record your organization’s interest in certification.
+If your organization delivers Claude for clients, apply to join at claude.com/partners. Membership gives your people access to certification exams, which test the work of scoping, designing, building, and running Claude deployments on customer engagements.
+Certificates of completion and certifications
+These are two different things, and the names are close enough that people mix them up. A Claude Academy certificate of completion records that you finished a course and passed its quiz. A Claude certification is a proctored exam delivered by Pearson VUE. It’s scored from 100 to 1,000, with 720 to pass, and passing earns a Credly badge you can share and a credential that’s valid for 12 months.
+Where to ask
+Registration, payment, results, and name corrections: certifications-support@anthropic.com
+Partner record and email domains: partner-support@anthropic.com
+Certification interest from organizations outside the network: your Anthropic account team
+More on certification
+Certifications and badges
+Certification FAQ
+Policies
+Data and Privacy
+What is Skilljar and why am I logging into it?
+Skilljar is a learning management system that hosts our educational content. You're logging into it to access the Anthropic course materials. This separate platform allows us to provide interactive learning experiences, track your progress, and ensure you have access to all course resources in an organized way.
+What information does Skilljar collect about my learning activity?
+Skilljar collects basic learning analytics such as course progress, lesson completion status, quiz scores, and time spent on materials. This data helps us understand how you're progressing through the course and allows us to provide you with completion certificates. All data collection is focused on improving your learning experience, and is subject to Skilljar's Privacy Policy.
+How is my Skilljar data different from my Anthropic account data?
+Skilljar only tracks your learning progress within this course platform, while your Anthropic account manages your access to the Anthropic Console and/or Claude AI services.
+Is Skilljar secure? Where is my data stored?
+Yes, Skilljar employs industry-standard security measures including data encryption, secure hosting, and regular security audits. Your learning data is stored on secure servers with appropriate access controls. Skilljar is SOC 2 compliant and follows best practices for data protection to ensure your information remains safe and private.
+How do I delete my learning activity or Skilljar account?
+You can request deletion of your learning activity by emailing academy-support@anthropic.com or deletion of your entire Skilljar account by emailing support@skilljar.com. Your request will be processed in accordance with applicable privacy laws and our data retention policies. Note that some data may need to be retained for legitimate business purposes, such as compliance or security, but we'll delete all personal information where legally permissible.
+Do I need an Anthropic account to access the learning content?
+No, you don't need an Anthropic account to access this learning content. The course is hosted on Skilljar and only requires a Skilljar account for access. However, if you want to use Claude AI services after completing the course, you would need to create a separate Anthropic account at claude.ai.
+© 2026 Anthropic PBC
+© 2026
+powered by
+(opens in new tab)
