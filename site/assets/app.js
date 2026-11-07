@@ -112,12 +112,12 @@ function study(ex = "ccao-f", id) {
   if (ex === "guide") return guide(id);
   const e = C.exams[ex]; const items = [...e.notes.map(n => ({ id: n.id, title: n.title, html: n.html })), { id: "cheatsheet", title: "Cheat sheet", html: e.cheatsheet }];
   const cur = items.find(i => i.id === id) || items[0];
-  app(`<div class="row" style="justify-content:space-between"><h1>Study</h1><div class="row">${Object.keys(C.exams).map(k => `<a class="btn ${k === ex ? "pri" : ""}" href="#/study/${k}">${C.exams[k].title}</a>`).join("")}<a class="btn" href="#/study/guide/${C.docs[0].id}">Plan & checklists</a></div></div>
+  app(`<div class="row" style="justify-content:space-between"><h1>Study</h1><div class="row">${Object.keys(C.exams).map(k => `<a class="btn ${k === ex ? "pri" : ""}" href="#/study/${k}">${C.exams[k].title}</a>`).join("")}<a class="btn" href="#/study/guide/${C.docs[0].id}">Guides & glossary</a></div></div>
   <div class="notes"><nav class="toc">${items.map(i => `<a href="#/study/${ex}/${i.id}" class="${i.id === cur.id ? "on" : ""}">${esc(i.title)}</a>`).join("")}</nav><article class="prose card">${cur.html}</article></div>`);
 }
 function guide(id) {
   const cur = C.docs.find(d => d.id === id) || C.docs[0];
-  app(`<div class="row" style="justify-content:space-between"><h1>Plan & checklists</h1><a class="btn" href="#/study/ccao-f">Back to notes</a></div><div class="notes"><nav class="toc">${C.docs.map(d => `<a href="#/study/guide/${d.id}" class="${d.id === cur.id ? "on" : ""}">${esc(d.title)}</a>`).join("")}</nav><article class="prose card">${cur.html}</article></div>`);
+  app(`<div class="row" style="justify-content:space-between"><h1>Guides & glossary</h1><a class="btn" href="#/study/ccao-f">Back to notes</a></div><div class="notes"><nav class="toc">${C.docs.map(d => `<a href="#/study/guide/${d.id}" class="${d.id === cur.id ? "on" : ""}">${esc(d.title)}</a>`).join("")}</nav><article class="prose card">${cur.html}</article></div>`);
 }
 
 /* ---------- setup screens ---------- */

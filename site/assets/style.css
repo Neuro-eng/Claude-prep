@@ -64,3 +64,5 @@ dialog::backdrop{background:rgba(10,16,24,.55)}#udBody{padding:22px 24px;overflo
 .log{list-style:none;margin:0;padding:0;display:grid;gap:10px}.log li{padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:14.5px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 @media(max-width:600px){.brand{display:none}.top{padding:8px 12px;gap:8px}}
+
+.prose details{margin:10px 0;padding:8px 14px;border:1px solid var(--line);border-radius:8px;font-family:var(--sans);font-size:15.5px;background:var(--paper)}.prose summary{cursor:pointer;font-weight:600}.prose details[open] summary{margin-bottom:8px}.prose pre{background:var(--paper);border:1px solid var(--line);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px}.prose a{word-break:break-word}
