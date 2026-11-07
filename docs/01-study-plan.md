@@ -29,3 +29,10 @@
 - Two passes of every flashcard deck before simulations.
 - Don't leave a domain until you can explain why each wrong option is wrong.
 - Score ≥ 80% on your own practice before booking the real thing.
+
+## Where each resource fits
+- **Notes** (Study tab): read one chapter → do its self-check → domain quiz in Learn mode.
+- **Glossary** (Guides & glossary): skim daily; every term should feel familiar.
+- **CCAR-P case studies**: attempt each *before* opening the model answer. Do 2 per week from week 2.
+- **Hands-on project**: schedule a weekend in week 3. Even a partial build helps a lot.
+- **Learn more links**: at the end of every chapter; open the Anthropic docs pages for the topics you score lowest on.
