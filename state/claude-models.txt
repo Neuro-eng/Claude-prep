@@ -2,18 +2,39 @@ Claude Fable 5.2
 Claude Opus 5.5
 Claude Sonnet 5.5
 Claude Haiku 5.5
-If you’re unsure which model to use, start with Claude Opus 5.5 for most workloads. Use Claude Fable 5.2 for demanding reasoning and long-horizon agentic work, or when your evals on Claude Opus 5.5 at higher effort still fall short. All current models support text and image input, text output, multilingual capabilities, vision, and tool use. Each model’s page lists the platforms it’s available on.
+If you’re unsure which model to use, start with Claude Opus 5.5 for most workloads. Use Claude Fable 5.2 for demanding reasoning and long-horizon agentic work, or when your evals on Claude Opus 5.5 at higher effort still fall short. All current models support text and image input, text output, multilingual capabilities, vision, and tool use.
 Claude Fable 5.2For demanding reasoning and long-horizon agentic work
 Claude Opus 5.5For long-running agentic coding and knowledge work
 Claude Sonnet 5.5The best combination of speed and intelligence
 Claude Haiku 5.5For high-volume, latency-sensitive tasks such as classification, extraction, and routing
 Claude API IDclaude-fable-5-2claude-opus-5-5claude-sonnet-5-5claude-haiku-5-5
 Claude API aliasclaude-fable-5-2claude-opus-5-5claude-sonnet-5-5claude-haiku-5-5
-Amazon Bedrock IDanthropic.claude-fable-5-2anthropic.claude-opus-5-5anthropic.claude-sonnet-5-5anthropic.claude-haiku-5-5
+Amazon Bedrock IDglobal.anthropic.claude-fable-5-2anthropic.claude-opus-5-5anthropic.claude-sonnet-5-5anthropic.claude-haiku-5-5
 Claude Models on Google Cloud (Google managed) IDclaude-fable-5-2claude-opus-5-5claude-sonnet-5-5claude-haiku-5-5
 Microsoft Foundry IDclaude-fable-5-2claude-opus-5-5claude-sonnet-5-5claude-haiku-5-5
 Claude Platform on AWS IDclaude-fable-5-2claude-opus-5-5claude-sonnet-5-5claude-haiku-5-5
 Claude Models on Google Cloud (Anthropic managed) IDclaude-fable-5-2claude-opus-5-5claude-sonnet-5-5claude-haiku-5-5
+Claude Fable 5.2
+Claude Opus 5.5
+Claude Sonnet 5.5
+Claude Haiku 5.5
+Claude Mythos 5.2
+Claude Fable 5.1
+Claude Mythos 5.1
+Claude Fable 5
+Claude Mythos 5
+Claude Opus 5
+Claude Opus 4.8
+Claude Opus 4.7
+Claude Opus 4.6
+Claude Opus 4.5
+Claude Opus 4.1
+Claude Opus 4
+Claude Sonnet 5
+Claude Sonnet 4.6
+Claude Sonnet 4.5
+Claude Sonnet 4
+Claude Haiku 4.5
 Each model in the response also has a linePreview with links to the API reference available — press Tab until focus enters the card, Escape to return. field, which names the model line it belongs to. Claude Opus 4.5 and Claude Opus 4.6 both report opus. Use line to group models, for example, in a model picker. line is null when a model belongs to no line. Read line instead of inferring it from the model’s id. Anthropic might add more lines, so don’t treat the set of values as fixed.
 Each model’s capabilities object also includes thinking.types.between_toolsPreview with links to the API reference available — press Tab until focus enters the card, Escape to return., which reports whether the model accepts thinking: {type: "between_tools"}, the setting that turns off up-front thinking. supported is false when the model rejects "between_tools" with a 400 error. Even when supported is true, the API can still reject a "between_tools" request for another reason, such as an effort level that the model doesn’t allow with "between_tools". For Claude Sonnet 5.5, for example, the Models API reports thinking.types.between_tools.supported as true and thinking.types.disabled.supported as false.
 The top-level code_executionPreview with links to the API reference available — press Tab until focus enters the card, Escape to return. capability is a different check. It reports whether code that Claude runs in the code execution tool can call the request’s other tools, as in programmatic tool calling. For Claude Haiku 4.5, for example, the Models API reports server_tools.code_execution.supported as true and code_execution.supported as false.
