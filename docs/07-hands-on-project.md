@@ -48,8 +48,8 @@ Diagram, trust boundaries, controls, known limitations, how a model upgrade woul
 - [ ] Why evals gate every change
 
 ## Resources
-- Tool use: https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview
+- Tool use: https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
 - MCP quickstart/servers: https://modelcontextprotocol.io/docs/getting-started/intro
 - Contextual Retrieval: https://www.anthropic.com/news/contextual-retrieval
 - Anthropic Cookbook (examples incl. RAG & evals): https://github.com/anthropics/anthropic-cookbook
-- Prompt caching: https://docs.claude.com/en/docs/build-with-claude/prompt-caching
+- Prompt caching: https://platform.claude.com/docs/en/build-with-claude/prompt-caching
