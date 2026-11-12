@@ -1,54 +1,23 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.8",
   "changelog": [
     {
-      "date": "2026-11-12T11:10Z",
-      "version": "1.0.5",
-      "type": "source",
-      "text": "Change detected on “Claude models overview”. Review exam guide / notes.",
-      "source": "https://docs.claude.com/en/docs/about-claude/models"
+      "date": "2026-11-12T11:56Z",
+      "version": "1.0.8",
+      "type": "content",
+      "text": "Study content or questions updated (ccao-f 60 q, ccar-p 63 q)."
     },
     {
-      "date": "2026-11-10T11:12Z",
-      "version": "1.0.5",
-      "type": "source",
-      "text": "Change detected on “Claude models overview”. Review exam guide / notes.",
-      "source": "https://docs.claude.com/en/docs/about-claude/models"
+      "date": "2026-11-12T11:55Z",
+      "version": "1.0.7",
+      "type": "content",
+      "text": "Study content or questions updated (ccao-f 60 q, ccar-p 63 q)."
     },
     {
-      "date": "2026-11-07T10:09Z",
-      "version": "1.0.5",
-      "type": "source",
-      "text": "Change detected on “Claude models overview”. Review exam guide / notes.",
-      "source": "https://docs.claude.com/en/docs/about-claude/models"
-    },
-    {
-      "date": "2026-11-07T10:09Z",
-      "version": "1.0.5",
-      "type": "source",
-      "text": "Change detected on “Partner Academy: Eligibility”. Review exam guide / notes.",
-      "source": "https://anthropic-partners.skilljar.com/page/certification-eligibility"
-    },
-    {
-      "date": "2026-11-07T10:09Z",
-      "version": "1.0.5",
-      "type": "source",
-      "text": "Change detected on “Partner Academy: Certification FAQ”. Review exam guide / notes.",
-      "source": "https://anthropic-partners.skilljar.com/page/faq-certifications"
-    },
-    {
-      "date": "2026-11-07T10:09Z",
-      "version": "1.0.5",
-      "type": "source",
-      "text": "Change detected on “Partner Academy: Certifications”. Review exam guide / notes.",
-      "source": "https://anthropic-partners.skilljar.com/page/partner-certifications"
-    },
-    {
-      "date": "2026-11-07T10:09Z",
-      "version": "1.0.5",
-      "type": "source",
-      "text": "Change detected on “Anthropic news”. Review exam guide / notes.",
-      "source": "https://www.anthropic.com/news"
+      "date": "2026-11-12T11:55Z",
+      "version": "1.0.6",
+      "type": "content",
+      "text": "Study content or questions updated (ccao-f 60 q, ccar-p 63 q)."
     },
     {
       "date": "2026-11-07T05:55Z",
@@ -81,55 +50,9 @@
       "text": "Study content or questions updated (ccao-f 60 q, ccar-p 63 q)."
     }
   ],
-  "sources": [
-    {
-      "id": "anthropic-news",
-      "name": "Anthropic news",
-      "url": "https://www.anthropic.com/news",
-      "last_checked": "2026-11-12T11:10Z",
-      "status": "unchanged",
-      "hash": "e3b0c44298fc",
-      "last_changed": "2026-11-07T10:09Z"
-    },
-    {
-      "id": "partner-certifications",
-      "name": "Partner Academy: Certifications",
-      "url": "https://anthropic-partners.skilljar.com/page/partner-certifications",
-      "last_checked": "2026-11-12T11:10Z",
-      "status": "unchanged",
-      "hash": "e490fa7939e5",
-      "last_changed": "2026-11-07T10:09Z"
-    },
-    {
-      "id": "partner-faq",
-      "name": "Partner Academy: Certification FAQ",
-      "url": "https://anthropic-partners.skilljar.com/page/faq-certifications",
-      "last_checked": "2026-11-12T11:10Z",
-      "status": "unchanged",
-      "hash": "959828bc6ead",
-      "last_changed": "2026-11-07T10:09Z"
-    },
-    {
-      "id": "partner-eligibility",
-      "name": "Partner Academy: Eligibility",
-      "url": "https://anthropic-partners.skilljar.com/page/certification-eligibility",
-      "last_checked": "2026-11-12T11:10Z",
-      "status": "unchanged",
-      "hash": "b6cc6c649930",
-      "last_changed": "2026-11-07T10:09Z"
-    },
-    {
-      "id": "claude-models",
-      "name": "Claude models overview",
-      "url": "https://docs.claude.com/en/docs/about-claude/models",
-      "last_checked": "2026-11-12T11:10Z",
-      "status": "changed",
-      "hash": "b504a02ca923",
-      "last_changed": "2026-11-12T11:10Z"
-    }
-  ],
-  "content_hash": "6e40752739ae",
-  "built": "2026-11-07T05:55Z",
+  "sources": [],
+  "content_hash": "ccd118e9bcc4",
+  "built": "2026-11-12T11:56Z",
   "counts": {
     "ccao-f": 60,
     "ccar-p": 63
@@ -138,6 +61,5 @@
     "guide_release": "2026-11-17",
     "content_change": "2026-12-07",
     "deadline": "2026-12-11"
-  },
-  "last_checked": "2026-11-12T11:10Z"
+  }
 }
