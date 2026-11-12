@@ -51,6 +51,6 @@ Fix (one change at a time): (1) add a fixed template with a mandatory "Risks" se
 <details><summary>Q3. How to improve format consistency?</summary>Template + few-shot examples + acceptance checklist.</details>
 
 ## Learn more
-- Prompt engineering overview: https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview
-- Increase output consistency: https://docs.claude.com/en/docs/test-and-evaluate/strengthen-guardrails/increase-consistency
-- Define success criteria: https://docs.claude.com/en/docs/test-and-evaluate/define-success
+- Prompt engineering overview: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+- Increase output consistency: https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency
+- Define success criteria: https://platform.claude.com/docs/en/test-and-evaluate/define-success

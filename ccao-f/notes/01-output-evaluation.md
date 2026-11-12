@@ -66,6 +66,6 @@ Claude's tone is equally confident when right and when wrong. Never use *confide
 <details><summary>Q3. Why is "Claude sounds confident" not evidence?</summary>Tone does not vary with correctness; always verify risky claims independently.</details>
 
 ## Learn more
-- Reduce hallucinations (Anthropic docs): https://docs.claude.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
-- Define success criteria: https://docs.claude.com/en/docs/test-and-evaluate/define-success
-- Anthropic Academy (free courses, incl. AI Fluency): https://anthropic.skilljar.com
+- Reduce hallucinations (Anthropic docs): https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
+- Define success criteria: https://platform.claude.com/docs/en/test-and-evaluate/define-success
+- Claude Academy (free courses): https://academy.claude.com

@@ -60,7 +60,7 @@ An analyst wants a summary of 200 customer complaints that include names, phone 
 <details><summary>Q3. Why is "ignore the names" not a control?</summary>The data was already disclosed; redact before sending.</details>
 
 ## Learn more
-- Mitigate jailbreaks & prompt injections (Anthropic docs): https://docs.claude.com/en/docs/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks
+- Mitigate jailbreaks & prompt injections (Anthropic docs): https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks
 - OWASP Top 10 for LLM applications: https://genai.owasp.org/llm-top-10/
 - NIST AI RMF: https://www.nist.gov/itl/ai-risk-management-framework
 - Anthropic Trust Center: https://trust.anthropic.com

@@ -50,6 +50,6 @@ HR Project "Leave Policy Helper":
 
 ## Learn more
 - What are Projects?: https://support.claude.com/en/articles/9517075-what-are-projects
-- Long-context tips: https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/long-context-tips
-- System prompts (role/instructions): https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/system-prompts
+- Long-context tips: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/long-context-tips
+- System prompts (role/instructions): https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/system-prompts
 - Claude support centre: https://support.claude.com

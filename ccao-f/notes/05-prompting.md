@@ -68,9 +68,9 @@ Now classify: "{new ticket}"
 <details><summary>Q3. Why XML tags?</summary>They separate instructions from content, reducing ambiguity.</details>
 
 ## Learn more
-- Prompt engineering overview: https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview
-- Be clear and direct: https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/be-clear-and-direct
-- Multishot prompting: https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/multishot-prompting
-- Use XML tags: https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags
-- Let Claude think: https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought
-- Long-context tips: https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/long-context-tips
+- Prompt engineering overview: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+- Be clear and direct: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/be-clear-and-direct
+- Multishot prompting: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/multishot-prompting
+- Use XML tags: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags
+- Let Claude think: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/chain-of-thought
+- Long-context tips: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/long-context-tips

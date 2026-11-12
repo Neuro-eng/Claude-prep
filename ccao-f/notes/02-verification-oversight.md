@@ -64,6 +64,6 @@ A bank drafts customer emails with Claude about a new overdraft fee.
 <details><summary>Q3. How do you test for bias in screening summaries?</summary>Swap names/attributes and compare; audit patterns; keep humans accountable.</details>
 
 ## Learn more
-- Anthropic Academy (AI Fluency covers "Discernment" and "Diligence"): https://anthropic.skilljar.com
+- Claude Academy, AI Fluency course (covers Discernment and Diligence): https://anthropic.skilljar.com/ai-fluency-framework-foundations
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework
-- Reduce hallucinations (grounding techniques): https://docs.claude.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
+- Reduce hallucinations (grounding techniques): https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations

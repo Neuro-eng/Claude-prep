@@ -57,8 +57,8 @@ A support team needs: (a) daily tagging of 20,000 emails; (b) a weekly insight m
 <details><summary>Q3. When Artifact?</summary>Substantial standalone reusable output (doc, page, tool).</details>
 
 ## Learn more
-- Models overview: https://docs.claude.com/en/docs/about-claude/models/overview
+- Models overview: https://platform.claude.com/docs/en/about-claude/models/overview
 - What are Projects?: https://support.claude.com/en/articles/9517075-what-are-projects
 - What are Artifacts?: https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them
-- Choosing a model: https://docs.claude.com/en/docs/about-claude/models/choosing-a-model
+- Choosing a model: https://platform.claude.com/docs/en/about-claude/models/choosing-a-model
 - Claude support centre: https://support.claude.com

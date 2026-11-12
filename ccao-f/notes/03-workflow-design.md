@@ -58,6 +58,6 @@ A finance team wants Claude to "do the month-end commentary".
 <details><summary>Q3. List four fields of a good prompt-library entry.</summary>Purpose, template/placeholders, example, review checklist, owner, version.</details>
 
 ## Learn more
-- Chain complex prompts (Anthropic docs): https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/chain-prompts
-- Prompt library (Anthropic docs): https://docs.claude.com/en/resources/prompt-library/library
+- Chain complex prompts (Anthropic docs): https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/chain-prompts
+- Prompt library (Anthropic docs): https://platform.claude.com/docs/en/resources/prompt-library/library
 - Building effective agents (workflow patterns): https://www.anthropic.com/engineering/building-effective-agents
