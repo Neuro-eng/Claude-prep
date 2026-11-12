@@ -72,8 +72,8 @@ Test regularly with adversarial prompts (injection, jailbreaks, data extraction,
 <details><summary>Q4. Timeout on an approval request: default?</summary>Deny (fail safe).</details>
 
 ## Learn more
-- Mitigate jailbreaks & prompt injections: https://docs.claude.com/en/docs/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks
-- Reduce hallucinations: https://docs.claude.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
+- Mitigate jailbreaks & prompt injections: https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks
+- Reduce hallucinations: https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
 - OWASP Top 10 for LLM Apps: https://genai.owasp.org/llm-top-10/
 - NIST AI RMF: https://www.nist.gov/itl/ai-risk-management-framework
 - GDPR text and guide: https://gdpr-info.eu/

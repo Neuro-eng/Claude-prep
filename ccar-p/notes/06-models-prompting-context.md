@@ -27,7 +27,9 @@ Check current model names/limits in docs; they change.
 Reuse a **stable prefix** (system prompt, tool definitions, big reference documents) across calls.
 - Mark cacheable content with `cache_control`; cache covers the prefix **up to** the marker.
 - **Order matters:** static content first, variable content (user question) last. Any change **before** the marker invalidates the cache.
-- Cached reads are billed at a **fraction (about 10%)** of normal input price; writes cost a bit more than normal (about 1.25× for the default 5-minute TTL; longer TTL options cost more). Verify current pricing and minimum cacheable length in docs.
+- **Price:** a cache *hit* costs only a small fraction of normal input price (roughly 10% on older models, and even less, such as 5% or 2.5%, on newer ones). A cache *write* costs a bit more than normal input.
+- **Lifetime (TTL):** 5 minutes by default, and the timer resets every time the cache is used. A 1-hour option exists at about 2× the base input price.
+- **Easy mode:** "automatic caching" lets you add one top-level `cache_control` field; or you can mark exact blocks yourself. Check the pricing table in the docs for current numbers.
 - Best for: chatbots with a long policy/KB in the prompt, agents with many tool definitions, repeated Q&A over one large document.
 - Not helpful when each request's prefix is different, or traffic is too sparse to hit within the TTL.
 
@@ -69,9 +71,9 @@ Plan: system + tools + retrieved context + history + output limit ≤ window, wi
 <details><summary>Q4. Best temperature for extraction?</summary>Low.</details>
 
 ## Learn more
-- Prompt engineering overview: https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview
-- Extended thinking: https://docs.claude.com/en/docs/build-with-claude/extended-thinking
-- Prompt caching: https://docs.claude.com/en/docs/build-with-claude/prompt-caching
-- Batch processing: https://docs.claude.com/en/docs/build-with-claude/batch-processing
+- Prompt engineering overview: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+- Extended thinking: https://platform.claude.com/docs/en/build-with-claude/extended-thinking
+- Prompt caching: https://platform.claude.com/docs/en/build-with-claude/prompt-caching
+- Batch processing: https://platform.claude.com/docs/en/build-with-claude/batch-processing
 - Effective context engineering for AI agents: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
-- Models overview & choosing a model: https://docs.claude.com/en/docs/about-claude/models/overview
+- Models overview & choosing a model: https://platform.claude.com/docs/en/about-claude/models/overview

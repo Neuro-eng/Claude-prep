@@ -88,9 +88,9 @@ Define schemas for inputs/outputs; validate with code; version interfaces; keep 
 <details><summary>Q4. Where is per-user access enforced in RAG?</summary>At retrieval (filter by user permissions), not in the prompt.</details>
 
 ## Learn more
-- Tool use overview: https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview
+- Tool use overview: https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
 - Model Context Protocol intro: https://modelcontextprotocol.io/docs/getting-started/intro
 - MCP specification: https://modelcontextprotocol.io/specification
 - Contextual Retrieval (Anthropic): https://www.anthropic.com/news/contextual-retrieval
 - Writing tools for agents (Anthropic engineering): https://www.anthropic.com/engineering/writing-tools-for-agents
-- API errors & rate limits: https://docs.claude.com/en/api/errors
+- API errors & rate limits: https://platform.claude.com/docs/en/api/errors

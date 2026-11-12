@@ -73,6 +73,6 @@ Anthropic's research-system write-up reports multi-agent runs use many times mor
 ## Learn more
 - Building effective agents: https://www.anthropic.com/engineering/building-effective-agents
 - How we built our multi-agent research system: https://www.anthropic.com/engineering/multi-agent-research-system
-- Batch processing: https://docs.claude.com/en/docs/build-with-claude/batch-processing
-- Prompt caching: https://docs.claude.com/en/docs/build-with-claude/prompt-caching
+- Batch processing: https://platform.claude.com/docs/en/build-with-claude/batch-processing
+- Prompt caching: https://platform.claude.com/docs/en/build-with-claude/prompt-caching
 - Effective context engineering for agents: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents

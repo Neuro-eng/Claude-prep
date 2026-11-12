@@ -68,6 +68,6 @@ Quality dropped after upgrading to a newer model version. Overall accuracy 91→
 <details><summary>Q4. Missing fraud is costly: favour which metric?</summary>Recall (accepting more false alarms).</details>
 
 ## Learn more
-- Define success criteria: https://docs.claude.com/en/docs/test-and-evaluate/define-success
-- Develop test cases: https://docs.claude.com/en/docs/test-and-evaluate/develop-tests
-- Using the Evaluation tool: https://docs.claude.com/en/docs/test-and-evaluate/eval-tool
+- Define success criteria: https://platform.claude.com/docs/en/test-and-evaluate/define-success
+- Develop test cases: https://platform.claude.com/docs/en/test-and-evaluate/develop-tests
+- Using the Evaluation tool: https://platform.claude.com/docs/en/test-and-evaluate/eval-tool

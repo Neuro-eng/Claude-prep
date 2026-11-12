@@ -62,10 +62,10 @@ Good README, architecture notes, runbooks and test instructions help humans and 
 <details><summary>Q3. Safe CI posture?</summary>Least-privilege token, sandbox, allow-listed tools, no prod secrets, human merge approval.</details>
 
 ## Learn more
-- Claude Code overview: https://docs.claude.com/en/docs/claude-code/overview
-- Memory / CLAUDE.md: https://docs.claude.com/en/docs/claude-code/memory
-- Settings & permissions: https://docs.claude.com/en/docs/claude-code/settings
-- Hooks: https://docs.claude.com/en/docs/claude-code/hooks-guide
-- Subagents: https://docs.claude.com/en/docs/claude-code/sub-agents
-- Claude Code MCP: https://docs.claude.com/en/docs/claude-code/mcp
-- Headless mode / GitHub Actions: https://docs.claude.com/en/docs/claude-code/github-actions
+- Claude Code overview: https://code.claude.com/docs/en/overview
+- Memory / CLAUDE.md: https://code.claude.com/docs/en/memory
+- Settings & permissions: https://code.claude.com/docs/en/settings
+- Hooks: https://code.claude.com/docs/en/hooks-guide
+- Subagents: https://code.claude.com/docs/en/sub-agents
+- Claude Code MCP: https://code.claude.com/docs/en/mcp
+- Headless mode / GitHub Actions: https://code.claude.com/docs/en/github-actions

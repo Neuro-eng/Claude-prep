@@ -65,7 +65,7 @@ Cost ≈ (input tokens + output tokens) × price × volume. Levers: smaller mode
 <details><summary>Q3. Model deprecation: response?</summary>Treat as planned change: test new model on evals, canary migrate, keep rollback.</details>
 
 ## Learn more
-- Anthropic model deprecations: https://docs.claude.com/en/docs/about-claude/model-deprecations
-- Define success criteria: https://docs.claude.com/en/docs/test-and-evaluate/define-success
+- Anthropic model deprecations: https://platform.claude.com/docs/en/about-claude/model-deprecations
+- Define success criteria: https://platform.claude.com/docs/en/test-and-evaluate/define-success
 - Building effective agents (start simple, measure): https://www.anthropic.com/engineering/building-effective-agents
 - NIST AI RMF (govern/map/measure/manage): https://www.nist.gov/itl/ai-risk-management-framework
