@@ -66,3 +66,6 @@ dialog::backdrop{background:rgba(10,16,24,.55)}#udBody{padding:22px 24px;overflo
 @media(max-width:600px){.brand{display:none}.top{padding:8px 12px;gap:8px}}
 
 .prose details{margin:10px 0;padding:8px 14px;border:1px solid var(--line);border-radius:8px;font-family:var(--sans);font-size:15.5px;background:var(--paper)}.prose summary{cursor:pointer;font-weight:600}.prose details[open] summary{margin-bottom:8px}.prose pre{background:var(--paper);border:1px solid var(--line);padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:14px}.prose a{word-break:break-word}
+
+.easy{max-width:none;font-family:var(--sans);font-size:16.5px;line-height:1.6}.easy h2{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}.easy p{margin:8px 0}.easy hr{border:0;border-top:1px solid var(--line);margin:22px 0}.easy strong:first-child{color:var(--pencil)}
+main:focus,main:focus-visible{outline:none}a.btn{text-decoration:none;display:inline-block}.easy p{margin:10px 0}.easy a{word-break:break-word}

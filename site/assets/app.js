@@ -73,7 +73,7 @@ function route() {
   clearInterval(timer); const [r = "", a, b] = location.hash.replace(/^#\/?/, "").split("/");
   document.querySelectorAll("#nav a").forEach(x => x.classList.toggle("on", x.dataset.r === r));
   if (S && S.active && r !== "run") S.active = false;
-  const v = { "": home, study, practice, mock, cards, progress, run: () => run() }[r] || home; v(a, b);
+  const v = { "": home, easy, study, practice, mock, cards, progress, run: () => run() }[r] || home; v(a, b);
   $("#app").focus({ preventScroll: true }); scrollTo(0, 0);
 }
 const app = h => { $("#app").innerHTML = h };
@@ -99,12 +99,21 @@ function home() {
   }).join("");
   const resume = LS.get("session", null);
   app(`<h1>Get both exams done before 11 Dec</h1><p class="sub">Notes, domain quizzes, full-length timed mock exams, flashcards and progress tracking for CCAO-F and CCAR-P.</p>
+  <div class="card" style="margin-bottom:16px;border-color:var(--pencil)"><div class="row" style="justify-content:space-between"><span><b>New here?</b> Start with the Easy Guide: simple words, one example and an Anthropic link for every topic.</span><span class="row"><a class="btn pri" href="#/easy/ccao-f">Easy Guide: CCAO-F</a><a class="btn pri" href="#/easy/ccar-p">Easy Guide: CCAR-P</a></span></div></div>
   ${resume ? `<div class="card" style="margin-bottom:16px;border-color:var(--warn)"><div class="row" style="justify-content:space-between"><span><b>Unfinished ${resume.kind === "mock" ? "mock exam" : "quiz"}</b> (${resume.exam.toUpperCase()}), ${Object.keys(resume.ans).length}/${resume.items.length} answered</span><span class="row"><a class="btn pri" href="#/run/resume">Resume</a><button class="btn" id="discard">Discard</button></span></div></div>` : ""}
   <div class="grid g3">${cd("new exam guides", D.guide_release, "Re-download from Skilljar")}${cd("exam content change", D.content_change, "CCAO-F, CCAR-P update")}${cd("your deadline", D.deadline, "Book early; retakes wait 14 days")}</div>
   <div class="grid g2" style="margin-top:16px">${ex}</div>
   <div class="card" style="margin-top:16px"><b>Suggested loop:</b> read one domain’s notes → 10-question domain quiz in Learn mode → flashcards → a full mock under real timing. Review every wrong answer, then repeat until your mock average is 80%+.
   <p class="small muted" style="margin-bottom:0">Independent study aid built from public blueprints. Not official Anthropic material; the official Exam Guide is authoritative. Exam rules ban AI assistance during the exam.</p></div>`);
   const d = $("#discard"); if (d) d.onclick = () => { LS.set("session", null); home() };
+}
+
+/* ---------- easy guide ---------- */
+function easy(ex = "ccao-f") {
+  const e = C.exams[ex];
+  app(`<div class="row" style="justify-content:space-between"><div><h1>Easy Guide</h1><p class="sub" style="margin:0">Simple words, one example and one Anthropic link per topic. Start here.</p></div><div class="row">${Object.keys(C.exams).map(k => `<a class="btn ${k === ex ? "pri" : ""}" href="#/easy/${k}">${C.exams[k].title}</a>`).join("")}</div></div>
+  <article class="prose card easy" style="margin-top:18px">${e.easy}</article>
+  <div class="row" style="margin-top:16px"><a class="btn" href="#/study/${ex}">Deeper notes</a><a class="btn" href="#/practice/${ex}">Practice quiz</a><a class="btn pri" href="#/mock/${ex}">Mock exam</a></div>`);
 }
 
 /* ---------- study ---------- */
