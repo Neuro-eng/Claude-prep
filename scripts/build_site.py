@@ -5,9 +5,9 @@ import csv, hashlib, json, pathlib, datetime, re
 import markdown
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-def MD(t):
+def MD(t, nl=False):
     t = t.replace("<details>", '<details markdown="1">')
-    h = markdown.markdown(t, extensions=["tables", "fenced_code", "sane_lists", "md_in_html"])
+    h = markdown.markdown(t, extensions=["tables", "fenced_code", "sane_lists", "md_in_html"] + (["nl2br"] if nl else []))
     # plain URLs become links; all external links open in a new tab
     h = re.sub(r'(?<!["=\w/])(https?://[^\s<)]+)(?![^<]*</a>)', r'<a href="\1">\1</a>', h)
     return re.sub(r'<a href="(https?://[^"]+)"', r'<a target="_blank" rel="noopener" href="\1"', h)
@@ -37,11 +37,12 @@ def main():
         for f in sorted((ROOT / ex / "notes").glob("[0-9]*.md")):
             t = f.read_text(); notes.append({"id": f.stem, "title": title_of(t, f.stem), "html": MD(t)})
         cheat = (ROOT / "cheatsheets" / f"{ex}.md").read_text()
+        easy = (ROOT / "easy" / f"{ex}.md").read_text()
         cards = list(csv.reader(open(ROOT / "flashcards" / f"{ex}.csv")))[1:]
         domains = {}
         for q in qs: domains[str(q["domain"])] = q["domain_name"]
         content["exams"][ex] = {**meta, "domains": domains, "notes": notes,
-                                "cheatsheet": MD(cheat), "flashcards": cards, "questions": qs}
+                                "cheatsheet": MD(cheat), "easy": MD(easy, nl=True), "flashcards": cards, "questions": qs}
     for f in sorted((ROOT / "docs").glob("*.md")):
         t = f.read_text(); content["docs"].append({"id": f.stem, "title": title_of(t, f.stem), "html": MD(t)})
 
