@@ -56,7 +56,9 @@ Reset
 Certifications ​ FAQ
 How can we help?
 ​ ​
-Browse by topic Program overview 4 Eligibility and access 6 Registering, scheduling, and taking the exam 13 Exam profile name changes and corrections 4 Pricing and payment 5 Results and scoring 4 Retakes and recertification 5 Credentials and badges 2 Moving to Pearson 4 Accommodations 1 No Shows 1 Appeals 1 Support 1 Exam content and prep 4 SME network 1
+New: Pearson SSO sign-in and checkout Effective Nov. 12, 2026, sign in to Pearson with single sign-on (SSO) through the Partner Academy, and pay at Pearson checkout. See the step-by-step guide.
+View the guide (PDF) →
+Browse by topic Program overview 4 Eligibility and access 6 Moving to single sign-on 3 Registering, scheduling, and taking the exam 16 Exam profile name changes and corrections 5 Pricing and payment 8 Results and scoring 4 Retakes and recertification 5 Credentials and badges 2 Moving to Pearson 4 Accommodations 2 No Shows 1 Appeals 1 Support 1 Exam content and prep 4 SME network 1
 No questions match
 Try a different word, or ask the Academy support team directly.
 Contact support
@@ -85,11 +87,34 @@ I'm getting "You aren't signed in with a partner company employee email." What d
 The email domain you signed in with is not yet recognized on your organization's partner record. First, check that you are signed in with your company email rather than a personal address. If you are and you still see the error, email partner-support@anthropic.com. Adding a domain requires a record change on our side and takes 7 to 10 days to take effect, so send the request before you plan to sit the exam.
 Our company uses several email domains. Which one should my team certify under? ​
 Certify under a domain recognized on your organization's partner record. Certifications earned on a domain that is not recognized — including subsidiary and regional domains — will not credit to your partner account. If your team spans multiple domains, email partner-support@anthropic.com with your parent company domain and the other domains that should roll up to it. We will update your record and confirm when it is done, which takes 7 to 10 days.
+Moving to single sign-on
+Starting November 12, 2026, you sign in to Pearson through Anthropic Partner Academy and pay at Pearson's checkout. Scheduling, exam delivery, and results stay with Pearson, and badges still come through Credly.
+Do I still use my Pearson username and password? ​
+No. Sign in to Partner Academy, open your exam, and select “Go to my Pearson account” (or “Already registered for this exam?”), and you'll arrive at Pearson already signed in. Your existing Pearson account and exam history stay the same. You will still receive a confirmation and reminder email from Pearson once an exam is scheduled. Keep it, because it contains the link to start your exam. Direct sign-in on Pearson's site is no longer available.
+I already have an exam booked. Do I need to do anything? ​
+No. Your appointment stays in place. For an OnVUE exam, use the Check in to start exam link in your confirmation or reminder email from Pearson. The same link works for future appointments. For a test center exam, go to the test center at your appointment time.
+I have a voucher from Anthropic that has expired. ​
+Email certifications-support@anthropic.com.
 Registering, scheduling, and taking the exam
 How do I register and schedule my exam? ​
-Go to the page for the certification you want to earn, register and pay, and you'll receive an email with a link to Pearson. Log in there and schedule your exam, either online proctored or at a Pearson test center. See the step-by-step guide →
+Sign in to Anthropic Partner Academy with your company credentials, open the certification you want, and select Register. You'll go straight to Pearson, already signed in, to schedule your exam and pay. There is no separate Pearson account to set up. See the step-by-step guide (PDF) →
+Log in to Partner Academy and choose your exam from the certifications page or the navigation bar at the top.
+Select Register. If you've already registered, you'll see a “Go to my Pearson account” screen instead — don't register again.
+Check your name. A new screen asks you to confirm your first and last name before you go to Pearson. They must exactly match the government-issued ID you'll present on exam day. You can change your own name only once per year, and confirming your profile locks it for a year.
+Continue to Pearson and select your exam under “Schedule an exam.”
+Choose online proctoring (OnVUE) or a Pearson test center, review and agree to the policies, terms and conditions, select your exam language, then pick a date and time.
+Confirm the total and check out. Your partner discount, if you have one, is applied automatically.
+Keep the confirmation email Pearson sends once your exam is scheduled. It contains the link you use to start an online exam.
+I already registered. How do I schedule, reschedule, or take my exam? ​
+Registrations, appointments, and payments from before November 12, 2026 carry over. To manage your exam, sign in to Partner Academy, open your exam, and select “Already registered for this exam?” or “Go to my Pearson account”. Don't register again.
+Schedule: select your exam under “Schedule an exam.” Payments made before November 12 are honored, so checkout shows zero cost.
+Take the exam: use the link in your Pearson confirmation or reminder email.
+Reschedule or cancel: select Reschedule or Cancel next to your appointment.
+Receipts, exam history, and results: all in your Pearson account, including score reports.
+I can't sign in, or I can't get from Partner Academy to Pearson. What do I do? ​
+First, check that you're signed in to Partner Academy with your company email. If you still can't get to Pearson, or your exam doesn't appear after you register, email certifications-support@anthropic.com with your registered email, the exam, and a screenshot.
 How long do I have to take the exam after I register? ​
-Once you register for an exam, your registration is valid for 5 years. You can schedule and take the exam at any time within that window.
+If you registered before 8am PT on November 12, 2026 and haven't booked your exam, your registration is valid for 5 years, whether or not it was discounted. You can schedule your exam at any time in that window. If you register after that time, you register, pay, and schedule your exam at the same time, through Pearson. The price reflects the partner discount in effect at that time.
 Which forms of ID are accepted? ​
 You'll need to present a valid, government-issued ID at check-in, whether you test online or at a test center. See Pearson's proof of identification requirements for the full list of accepted forms of ID. See accepted forms of ID →
 How do I change my name, address or phone number for my exam? ​
@@ -107,20 +132,42 @@ Note: If your primary residence is not in Iran, you can still test. You'll need 
 My corporate network or managed device blocks the exam. What does my IT team need to allow? ​
 Pearson publishes the full list of domains that must be reachable from your network for OnVUE exam delivery. Share it with your corporate network administrator, along with Pearson's system requirements. If the exam still won't launch on a managed device, you can take it at a Pearson test center instead. Pearson system requirements and domains →
 Can I reschedule or cancel? ​
-Yes. You must contact Pearson or access your online Pearson account to cancel or reschedule your exam at least a minimum of 48 hours prior to your appointment. Exams cannot be canceled or rescheduled less than 48 hours prior to your appointment. Failure to cancel or reschedule in time or failure to appear for your appointment will result in the forfeiture of your exam fee.
-Note: When rescheduling your exam, be sure you receive an email confirming your new exam date. If you don't receive that confirmation, log back into your Pearson account to verify the new date appears in your profile — otherwise, your exam rescheduling may not have completed successfully and you risk forfeiting your exam authorization.
+Yes. In your Pearson account, select Reschedule or Cancel next to your appointment. To get there, sign in to Partner Academy, open your exam, and select “Already registered for this exam?” or “Go to my Pearson account”.
+Test center exams can be rescheduled or cancelled up to 48 hours before the appointment. OnVUE (online proctored) exams can be rescheduled or cancelled up to one hour before the appointment. Failure to cancel or reschedule in time, or failure to appear for your appointment, will result in the forfeiture of your exam fee.
+Your price is locked when you schedule, including any partner discount. Rescheduling keeps that price, so if you scheduled with a 100% discount you can reschedule without paying.
+Cancelling removes your appointment. If you paid at Pearson's checkout, your refund starts automatically and takes 7 to 10 business days. If your exam was free with a discount, there's nothing to refund. If you paid through Anthropic Partner Academy before 8am PT on November 12, 2026, Anthropic refunds your payment after you cancel, which can take a few extra days. If your refund hasn't arrived after 10 days, email certifications-support@anthropic.com from the address used for the purchase.
+The exam can still appear on your Pearson Dashboard. To book again with your partner discount, start from Partner Academy. You pay the price and discount in effect at that time. If you still plan to test, reschedule instead of cancelling, since that keeps your price.
+Note: When rescheduling your exam, be sure you receive an email confirming your new exam date. If you don't receive that confirmation, go back to your Pearson account to verify the new date appears in your profile — otherwise, your exam rescheduling may not have completed successfully and you risk forfeiting your exam authorization.
 If I currently have a certification exam scheduled in English, can I switch it to Japanese? ​
 Yes. To switch a scheduled English exam appointment to the Japanese version:
-Log in to your Pearson account.
+Go to your Pearson account through Partner Academy.
 Cancel your current English exam appointment.
-Schedule a new appointment and choose the Japanese version of the exam.
-Note: You must cancel or reschedule at least 48 hours before your appointment. Changes can't be made less than 48 hours before it. If you miss this window or don't show up for your appointment, you'll forfeit your exam fee.
-Pearson will email you a confirmation once your new appointment is booked. If it doesn't arrive, log back in to your Pearson account and check that the new appointment shows in your profile. If it isn't there, the booking may not have gone through, and you could lose your exam authorization.
+Return to your certification page in Partner Academy and select “Go to my Pearson account” to book again, choosing the Japanese version of the exam.
+Don't schedule from the cancelled exam on your Pearson Dashboard, or your partner discount won't apply at checkout.
+What happens to your payment depends on where you paid.
+Paid at Pearson's checkout (November 12, 2026 or later): Cancelling starts an automatic refund. When you book again, you pay the price and discount in effect at that time.
+Paid through Anthropic Partner Academy before 8am PT on November 12, 2026: Anthropic refunds your payment after you cancel, which can take a few extra days. If your refund hasn't arrived after 10 days, email certifications-support@anthropic.com from the address used for the purchase.
+Note: You must cancel or reschedule at least 48 hours before a test center appointment, or at least one hour before an OnVUE appointment. If you miss this window or don't show up for your appointment, you'll forfeit your exam fee.
+Pearson will email you a confirmation once your new appointment is booked. If it doesn't arrive, go back to your Pearson account and check that the new appointment shows in your profile. If it isn't there, the booking may not have gone through, and you could lose your exam authorization.
+Can I switch between online (OnVUE) and a test center? ​
+Not directly. Cancel your appointment and book a new one in the format you want. To get there, sign in to Partner Academy, open your exam, and select “Go to my Pearson account” (or “Already registered for this exam?”).
+Don't schedule from the cancelled exam on your Pearson Dashboard, or your partner discount won't apply at checkout.
+Paid at Pearson's checkout (November 12, 2026 or later): Cancelling starts an automatic refund, which takes 7 to 10 business days. If your exam was free with a discount, there's nothing to refund. When you book again, you pay the price and discount in effect at that time.
+Paid through Anthropic Partner Academy before 8am PT on November 12, 2026: Anthropic refunds your payment after you cancel, which can take a few extra days. If your refund hasn't arrived after 10 days, email certifications-support@anthropic.com from the address used for the purchase.
 Does cancelling my exam appointment in Pearson automatically issue a refund? ​
-No. Cancelling in Pearson only cancels your scheduled date and time — it's designed to let you pick a new appointment, and it doesn't end your registration or trigger a refund. If you paid for your exam and no longer plan to take it, email certifications-support@anthropic.com to request a refund.
+It depends on when you paid.
+Paid at Pearson checkout on or after November 12, 2026: Yes. Your refund starts automatically and takes 7 to 10 business days. When you cancel, Pearson refunds whatever you paid at checkout and releases your locked price. If you schedule again, you get the price and discount that apply at that time. For example, if you booked a free exam with a 100% discount and then cancel, and your company no longer has that discount when you book again, you'll pay at checkout.
+Paid through Anthropic Partner Academy before 8am PT on November 12, 2026: Yes. Anthropic refunds your payment after you cancel, which can take a few extra days. If your refund hasn't arrived after 10 days, email certifications-support@anthropic.com from the address used for the purchase.
+Note: For a refund on a payment made on or after November 12, 2026, or any other checkout problem at Pearson, contact Pearson support.
+I cancelled my exam, but it still shows on my Dashboard. Is that a problem? ​
+No. After you cancel, the exam can still appear on your Pearson Dashboard, but it is no longer scheduled. If you paid, your refund is still on its way to you.
+If you want to book again, start from Partner Academy: sign in, open your exam, and select “Go to my Pearson account” to begin registration again. If you try to schedule from the cancelled entry on your Dashboard, your partner discount won't appear at checkout.
+Note: If the total at checkout looks wrong, don't complete the purchase. Log out of Partner Academy, log back in, and try registering again. If the total is still wrong, email certifications-support@anthropic.com with a screenshot of what you see at checkout.
 Can I use notes, documentation, translation tools, or AI assistants during the exam? ​
 No. Exams are closed book. Browser translation tools are not permitted under the Pearson proctoring platform.
 Exam profile name changes and corrections
+Which name does Pearson receive? ​
+The name in your exam profile. Check that your first and last name exactly match your government-issued ID before you schedule. If you need to change it, see How do I update my name in my exam profile to match my ID? Your name can be changed only once per year.
 What happens if my name doesn't match my ID at check-in? ​
 Before your exam, you're required to confirm that your Pearson profile name matches your government-issued ID exactly — this requirement appears during scheduling, is included in your confirmation email, and is detailed on Pearson's Proof of Identification Requirements page.
 If you notice a mismatch, update your name in your exam profile — see How do I update my name in my exam profile to match my ID? below — before your scheduled exam.
@@ -128,20 +175,20 @@ If you arrive at your exam with a name mismatch that wasn't reported to us in ad
 Note: If you have questions about the timing of your check-in, or believe you were incorrectly denied entry, contact Pearson Support directly — they can review their proctor notes to confirm exactly when you were turned away.
 How do I update my name in my exam profile to match my ID? ​
 Your name must exactly match the government-issued ID you will present when you take your exam. That ID must be one of Pearson's accepted forms of identification — see Pearson's Proof of Identification Requirements.
-Your name can only be changed once per year, so please check carefully before confirming. Enter it in Latin letters, including any accents, exactly as it appears on your ID. Include a middle name only if your ID shows one. If you have a single legal name, put a period (“.”) in the last-name field.
-To update your name, please do the following:
+Your name can only be changed once per year, so please check carefully before confirming. Enter it in Latin letters, including any accents, exactly as it appears on your ID. Include a middle name only if your ID shows one. If you have a single legal name, put a period (“.”) in the last-name field. Check all your name fields before you confirm, including the middle name, since browser autofill may fill it in.
+You'll also be asked to check your name on a screen when you register or go to Pearson. To update your name yourself at any time, please do the following:
 Log into your Partner Academy account
 From your profile, click Update Exam Profile.
 Complete the fields.
 When prompted, verify your login.
 Confirm your details are accurate before saving.
-Note: Your name locks for the year as soon as you confirm your profile — even if you were only updating your phone number or address — so double-check your name field before saving.
+Note: Your name locks for the year as soon as you confirm your profile — even if you were only updating your phone number or address — so double-check your name field before saving. A locked name doesn't mean your account is locked.
 Phone and address: These aren't used to verify your identity and can be updated at any time. Wait at least 5 minutes between saves.
 Note: If you haven't confirmed your profile yet, you may see a placeholder Anthropic address and phone number on your record — this is expected and won't affect your exam.
 Note: Updating your name doesn't affect an exam you already have booked — your appointment stays in place. For timing guidance before you make this update, see How far in advance of my scheduled exam do I need to update my name? below.
 Note: If the page says it can't find your exam record, you'll need to enroll in an exam before you can use this self-service update. If you can't open the page or save your changes, email certifications-support@anthropic.com.
 I've already updated my name this year but need another correction — what do I do? ​
-Your exam profile only allows one self-service name update per year — see How do I update my name in my exam profile to match my ID? above. If you've already used that update and still need a correction, request it from Anthropic Certification Support.
+Your exam profile only allows one self-service name update per year — see How do I update my name in my exam profile to match my ID? above. If you've already used that update and still need a correction, request it from Anthropic Certification Support. Any name change made by the certification support team also locks your name, so further changes must be requested by emailing certifications-support@anthropic.com.
 Please submit your name correction request as early as possible — see How far in advance of my scheduled exam do I need to update my name? below for timing guidance. These requests are reviewed individually on a case-by-case basis, and approval is not guaranteed.
 To request a name correction:
 Email certifications-support@anthropic.com from the email address your exam is registered with, with the subject line "Exam Profile Name Correction Request"
@@ -155,15 +202,26 @@ Name correction request to support: Submit your request at least 24 to 48 hours 
 Note: Either way, if your name isn't updated in time, Pearson will not allow you to test — and per their policy, your exam fee is forfeited and you will be required to register again and schedule a new attempt.
 Pricing and payment
 Are there discounts? ​
-Discounts follow your organization's Claude Partner Network tier. Registered-tier partners pay full price. Select, Preferred, and Global Premier partners receive 50% off, applied automatically at checkout. Through December 31, 2026, Global Premier partners receive a 100% discount on all certification exams; after that date, the standard 50% discount applies.
+Discounts follow your organization's Claude Partner Network tier. Registered-tier partners pay full price. Select, Preferred, and Global Premier partners receive 50% off, applied automatically at checkout on Pearson's site. Through December 31, 2026, Global Premier partners receive a 100% discount on all certification exams; after that date, the standard 50% discount applies.
+Your discount applies when you schedule your exam, so schedule before your discount ends to keep it. For registrations made after November 12, 2026, cancelling an exam releases your locked price, so if you book again after your discount ends, you'll pay the price in effect at that time. Rescheduling keeps your price.
+How long does my discount last? ​
+When you register, pay, and schedule your exam at Pearson, the price reflects the partner discount in effect at that time. If you reschedule, your price stays the same. If you cancel and book again later, the price and discount in effect at that time apply. Start from Partner Academy when you book again, not from the cancelled exam on your Pearson Dashboard, or your discount won't apply. If you registered before 8am PT on November 12, 2026 and haven't booked yet, see How long do I have to take the exam after I register?
 How do I pay? ​
-You pay for the exam by credit card through Anthropic Partner Academy before you're directed to Pearson to schedule.
+Since November 12, 2026, you pay at checkout on Pearson's site when you schedule your exam, not on Anthropic Partner Academy. Sign in to Partner Academy, select Register, and you'll go straight to Pearson. Your partner discount, if you have one, is applied automatically. The price, including any discount, is locked when you schedule, and rescheduling keeps that price.
+If you paid through Anthropic Partner Academy before 8am PT on November 12, 2026, you won't be charged again. See “I already paid but haven't booked. Will I pay again?” below.
+I already paid but haven't booked. Will I pay again? ​
+No. Payments made before November 12 are honored. Sign in to Partner Academy, open your exam, and select “Go to my Pearson account” (or “Already registered for this exam?”). Your checkout total at Pearson should be $0. Don't register again. If the total isn't $0, don't check out. Email certifications-support@anthropic.com with a screenshot.
 Can we buy in bulk or consolidate billing for our team? ​
 Not yet. A voucher storefront — where partners can buy vouchers for their organization with discounts applied and track usage in one place — is in progress. Details will be shared when it's ready.
+How do I get a receipt or invoice? ​
+Pearson emails a receipt when you purchase. To get another copy, you’ll need to log in to your Pearson account through Partner Academy. Click “Go to my Pearson account” on your certification page in Partner Academy, then go to your receipts in your Pearson portal and click Resend.
+We're unable to provide VAT invoices or customized invoices or receipts. For questions about a receipt from a Pearson purchase, contact Pearson support. For a purchase made through Anthropic Partner Academy, email certifications-support@anthropic.com.
 Did exam prices change? ​
 Yes. Effective June 30, 2026, the price of Claude Certified Architect – Foundations increased from $99 to $125. Registrations completed before June 30, 2026 were charged the prior price.
 My partner discount isn't showing at checkout. Why? ​
-Select, Preferred, and Global Premier partners receive 50% off, applied automatically at checkout. Through December 31, 2026, Global Premier partners receive a 100% discount on all exams. If you're on one of these tiers and still see full price, your company domain may not be linked to your partner record. First, check that you're signed in with your company email rather than a personal address. If you are and you still see full price, email partner-support@anthropic.com. Adding or linking a domain requires a record change on our side and takes 7 to 10 days to take effect, so send the request before you plan to sit the exam.
+Select, Preferred, and Global Premier partners receive 50% off, applied automatically at Pearson checkout. Through December 31, 2026, Global Premier partners receive a 100% discount on all exams.
+If the total at checkout looks wrong, don't check out. Log out of Partner Academy, log back in, and try registering again. If the price is still wrong, email certifications-support@anthropic.com with a screenshot of what you see at checkout.
+If you're on one of these tiers and still see full price, your company domain may not be linked to your partner record. First, check that you're signed in with your company email rather than a personal address. If you are and you still see full price, email partner-support@anthropic.com. Adding or linking a domain requires a record change on our side and takes 7 to 10 days to take effect, so send the request before you plan to sit the exam.
 Results and scoring
 When and how do I get my results? ​
 You'll see your score on screen at the end of your exam, whether you test online or at a test center; test center candidates also receive a printed score report. If you pass, you'll receive an email from Credly to claim your badge — this usually arrives within minutes for online proctored exams and takes a little longer for test center exams.
@@ -173,17 +231,17 @@ If I don't pass, will I find out which areas I was weak in? ​
 Yes. Your score report shows your overall scaled score, your pass or fail result, and the percentage of items you answered correctly in each section of the exam. You can use the section breakdown to decide what to review before a retake.
 Where can I view my score report? ​
 You'll receive a copy of your score report via email. However, you can also access it any time by following the steps below:
-Log into your Pearson web account and click "Log in"
+Sign in to Partner Academy, open your exam, and select “Already registered for this exam?” or “Go to my Pearson account”
 On the Dashboard, under My account, click "View Score reports"
 Click "View" for the score report you wish to view or print
-Note: Score reports for exams taken before June 30, 2026 on ProctorFree are no longer available.
+Note: Receipts and exam history are also in your Pearson account. Score reports for exams taken before June 30, 2026 on ProctorFree are no longer available.
 Retakes and recertification
 If I don't pass, when can I retake? ​
 Waiting periods increase with each failed attempt: 14 days after the first, 30 days after the second, and 90 days after the third. You can take an exam up to 4 times per rolling 12 months. This applies per exam, so failing one track doesn't block you from registering for another.
 How much does a retake cost? ​
 A retake is the full exam fee. Your partner tier discount applies to retakes.
 How do I retake an exam? ​
-To retake an exam, register for it again in Anthropic Partner Academy. As soon as your registration is complete, you will see a link in Pearson to schedule your exam. Pearson will limit the dates you can select based on the required waiting period between attempts.
+To retake an exam, click Register on your certification page in Partner Academy, confirm your exam and profile, then select Continue to Pearson to book and pay. Pearson will limit the dates you can select based on the required waiting period between attempts.
 How long is my certification valid? ​
 12 months from the date you earn it. Certifications earned before June 30, 2026 under the previous 6-month validity have been extended automatically to 12 months from their original earned date.
 What does recertification involve, and what does it cost? ​
@@ -197,7 +255,7 @@ Yes. We recommend adding a personal email address to your Credly profile so you 
 Moving to Pearson
 On June 30, 2026, certification moved to Pearson for exam delivery and to Credly for digital badging. These questions cover what changed for people who certified or registered before that date.
 I registered for an exam before the move to Pearson. Do I need to do anything? ​
-We moved existing registrations over to Pearson in waves. If you had already registered, you should have received an email from us with your Pearson registration link — check your spam folder if you can't find it. If you didn't receive an email and you hadn't yet paid, register through the normal route from your certification's page in Anthropic Partner Academy. If you already paid and still aren't getting an email from Pearson, email certifications-support@anthropic.com — don't register again, as you would be charged a second time.
+We moved existing registrations over to Pearson, and since November 12, 2026 you reach Pearson by signing in to Anthropic Partner Academy — there are no separate Pearson login emails to wait for. If you had already registered, sign in to Partner Academy, open your exam, and select “Already registered for this exam?” or “Go to my Pearson account” to schedule your exam. Don't register again, as you could be charged a second time. If you hadn't yet registered, register from your certification's page in Partner Academy. If your exam doesn't appear, email certifications-support@anthropic.com with your registered email, the exam, and a screenshot.
 I passed or attempted Architect – Foundations before June 30, 2026. How does the move to Pearson affect me? ​
 If you attempted the exam and did not pass, your earlier failed attempt is cleared and you can register and retake on Pearson with no waiting period. If you passed, your certification is valid for 12 months from the date you earned it.
 I took the exam before the migration and never received my result. What now? ​
@@ -206,16 +264,48 @@ I passed before the migration to Credly and Pearson on June 30. Where is my badg
 All existing certifications have been transferred to Credly, and everyone should have received an email asking them to accept their badge. If you haven't received it, check your spam folder, then contact support.
 Accommodations
 What accommodations are available, and how do I request them? ​
-Accommodations are requested through Pearson's accommodations process. Please plan to request accommodations 10 days or more before you plan on taking your exam. Request accommodations →
+Accommodations are requested through Pearson's accommodations process. Please request accommodations before you schedule your exam, and plan to do so 10 days or more before you plan on taking it. Request accommodations →
+I'm not a native English speaker. Can I get extra time on the exam? ​
+The exam is available in English and Japanese only, and translation tools, devices, and software aren't allowed during the exam. If English is your second language, you can request a time extension through Pearson:
+Submit the English as a second language request form, along with a letter addressed to Pearson VUE (view sample letter).
+Email the form and letter to PVESLRequest@pearson.com. Processing takes 3 to 5 business days.
+The letter must be typed and:
+Be written and signed by someone other than you or your family
+Have your name on it
+Be on letterhead
+Clearly state that English is your second language
+Note: If you already have an exam scheduled, you'll need to cancel it first, because extra time can't be added to a scheduled exam. To book again, start from Partner Academy, not from the cancelled exam on your Pearson Dashboard, or your partner discount won't apply. See “Can I reschedule or cancel?” for refund details.
 No Shows
 What happens if I don't show up for my scheduled exam appointment (No Show)? ​
-If you don't show up for your appointment, you forfeit the exam fee. To take the exam again, you'll need to purchase a new attempt.
+If you don't show up for your appointment, you forfeit the exam fee. To take the exam again, you'll need to purchase a new attempt: click Register on your certification page, confirm your exam and profile, then select Continue to Pearson to book and pay.
 Appeals
 I disagree with a decision about my certification. Can I appeal? ​
-Yes. You can appeal within 14 days of the date we notify you of the decision, or from your exam date for a results concern. Submit your appeal to Pearson. A disputed question does not by itself change a pass or fail result, and reporting an issue never counts against you or affects your result.
+Yes. You can appeal within 14 days of the date we notify you of the decision, or from your exam date for a results concern. Open a case with Pearson support and keep your case number. If you still need help after Pearson has fully reviewed your case, email certifications-support@anthropic.com with your case number. A disputed question does not by itself change a pass or fail result, and reporting an issue never counts against you or affects your result.
 Support
 Where do I go for help? ​
-For exam support — including registration, scheduling, proctoring, and exam-day issues — contact Pearson support. For issues with your digital badge, contact Credly support at support.credly.com. To add or roll up partner email domains, or if a certification is not credited to your partner account, email partner-support@anthropic.com; record changes take 7 to 10 days.
+Who to contact depends on the issue. Find it below.
+Contact
+Reach out for
+Claude Certification Supportcertifications-support@anthropic.com
+Can't sign in, or can't get from Partner Academy to Pearson
+Exam doesn't appear after registering
+Checkout shows the wrong price
+Name is locked or wrong, or your profile won't save
+A refund that hasn't arrived 10 days after you cancelled, for a payment made through Partner Academy before 8am PT on November 12, 2026
+Include your registered email, the exam, and a screenshot.
+Pearson supportContact Pearson
+Scheduling, rescheduling, or cancelling
+Online exam (OnVUE) setup, system test, technical issues, or check-in
+Test center or proctoring issues
+Missed or interrupted exam
+Vouchers
+Any other checkout problem at Pearson, or a refund for a payment made on or after November 12, 2026
+Keep your case number. If you still need help after Pearson has fully reviewed your case, email Claude Certification Support with that number.
+Credly supportsupport.credly.com
+Digital badge problems
+Adding a secondary or personal email address to your Credly account
+Partner supportpartner-support@anthropic.com
+Partner record or email domain issues, including adding or rolling up domains, or a certification not credited to your partner account. Record changes take 7 to 10 days.
 Exam content and prep
 Is there a practice exam? ​
 The practice exam available on the previous platform was retired in the move to Pearson. The exam guide includes sample questions that show the format and style of what's on the exam.
