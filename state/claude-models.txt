@@ -38,10 +38,10 @@ Claude Haiku 4.5
 Each model in the response also has a linePreview with links to the API reference available — press Tab until focus enters the card, Escape to return. field, which names the model line it belongs to. Claude Opus 4.5 and Claude Opus 4.6 both report opus. Use line to group models, for example, in a model picker. line is null when a model belongs to no line. Read line instead of inferring it from the model’s id. Anthropic might add more lines, so don’t treat the set of values as fixed.
 Each model’s capabilities object also includes thinking.types.between_toolsPreview with links to the API reference available — press Tab until focus enters the card, Escape to return., which reports whether the model accepts thinking: {type: "between_tools"}, the setting that turns off up-front thinking. supported is false when the model rejects "between_tools" with a 400 error. Even when supported is true, the API can still reject a "between_tools" request for another reason, such as an effort level that the model doesn’t allow with "between_tools". For Claude Sonnet 5.5, for example, the Models API reports thinking.types.between_tools.supported as true and thinking.types.disabled.supported as false.
 The top-level code_executionPreview with links to the API reference available — press Tab until focus enters the card, Escape to return. capability is a different check. It reports whether code that Claude runs in the code execution tool can call the request’s other tools, as in programmatic tool calling. For Claude Haiku 4.5, for example, the Models API reports server_tools.code_execution.supported as true and code_execution.supported as false.
+Output quality: When migrating from a previous model generation, you might notice larger improvements in overall performance. If you’re on Claude Opus 5 or earlier, see the Claude Opus 5.5 migration guide.
 The model line this model belongs to, such as opus for both Claude Opus 4.5 and Claude Opus 4.6. More lines may be added. null when the model belongs to no line; do not infer a line from the id.
 "haiku"
 "sonnet"
 "opus"
 "fable"
 "mythos"
-Output quality: When migrating from a previous model generation, you might notice larger improvements in overall performance. If you’re on Claude Opus 5 or earlier, see the Claude Opus 5.5 migration guide.

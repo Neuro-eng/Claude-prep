@@ -1,0 +1,14 @@
+--- previous
++++ current
+@@ -60,3 +60,3 @@
+ View the guide (PDF) →
+-Browse by topic Program overview 4 Eligibility and access 6 Moving to single sign-on 3 Registering, scheduling, and taking the exam 16 Exam profile name changes and corrections 5 Pricing and payment 8 Results and scoring 4 Retakes and recertification 5 Credentials and badges 2 Moving to Pearson 4 Accommodations 2 No Shows 1 Appeals 1 Support 1 Exam content and prep 4 SME network 1
++Browse by topic Program overview 4 Eligibility and access 7 Moving to single sign-on 3 Registering, scheduling, and taking the exam 16 Exam profile name changes and corrections 5 Pricing and payment 8 Results and scoring 4 Retakes and recertification 5 Credentials and badges 2 Moving to Pearson 4 Accommodations 2 No Shows 1 Appeals 1 Support 1 Exam content and prep 4 SME network 1
+ No questions match
+@@ -83,2 +83,6 @@
+ Yes. You must be at least 18 years old to take a Claude Certification exam. Age is verified at check-in against your government-issued ID, whether you test online or at a test center.
++Can I take a Claude certification exam from my country or region? ​
++Claude certification exams are available only in the countries and regions Anthropic supports. See the list of supported countries.
++If you’re in an unsupported location, we can’t offer registration, payment or exam delivery there, and Pearson can’t make an exception. Parts of Ukraine are not supported: Crimea, Donetsk, Kherson, Luhansk and Zaporizhzhia. The rest of Ukraine is supported.
++Questions? Email certifications-support@anthropic.com.
+ How do I get access? ​
