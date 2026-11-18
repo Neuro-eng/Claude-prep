@@ -66,12 +66,12 @@ Program overview
 What is the Claude Certification program and who is it for? ​
 The Claude Certification program validates that people at partner organizations have the skills to do real work with Claude, across three roles: Associate, Developer, and Architect. Certification counts toward your firm's standing in the Claude Partner Network, and it signals to customers that your team has invested in a real Claude practice.
 Which certifications are available? ​
-Four: Claude Certified Associate ($99), Claude Certified Developer – Foundations ($125), Claude Certified Architect – Foundations ($125), and Claude Certified Architect – Professional ($175). Prices are in USD before any partner-tier discount.
+Five: Claude Certified Associate ($99), Claude Certified Developer – Foundations ($125), Claude Certified Developer – Professional ($175), Claude Certified Architect – Foundations ($125), and Claude Certified Architect – Professional ($175). Prices are in USD before any partner-tier discount.
 What's the difference between Architect – Foundations and Architect – Professional? Does Foundations upgrade to Professional automatically? ​
 They're separate certifications with separate exams. Foundations proves an architect can build with Claude. Professional proves they can design and govern Claude solutions at enterprise scale. Foundations is the natural place to start and there's no formal prerequisite, so you can take Professional without holding Foundations. Foundations does not convert or upgrade to Professional automatically.
 Which certifications count towards Claude Partner Network eligibility? ​
 Exams that count towards Claude Partner Network eligibility:
-Claude Certified Developer – Foundations, Claude Certified Architect – Foundations, and Claude Certified Architect – Professional
+Claude Certified Developer – Foundations, Claude Certified Developer – Professional, Claude Certified Architect – Foundations, and Claude Certified Architect – Professional
 Exams that do not count towards Claude Partner Network eligibility:
 Claude Certified Associate
 Eligibility and access

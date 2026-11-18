@@ -1,0 +1,12 @@
+--- previous
++++ current
+@@ -68,3 +68,3 @@
+ Which certifications are available? ​
+-Four: Claude Certified Associate ($99), Claude Certified Developer – Foundations ($125), Claude Certified Architect – Foundations ($125), and Claude Certified Architect – Professional ($175). Prices are in USD before any partner-tier discount.
++Five: Claude Certified Associate ($99), Claude Certified Developer – Foundations ($125), Claude Certified Developer – Professional ($175), Claude Certified Architect – Foundations ($125), and Claude Certified Architect – Professional ($175). Prices are in USD before any partner-tier discount.
+ What's the difference between Architect – Foundations and Architect – Professional? Does Foundations upgrade to Professional automatically? ​
+@@ -73,3 +73,3 @@
+ Exams that count towards Claude Partner Network eligibility:
+-Claude Certified Developer – Foundations, Claude Certified Architect – Foundations, and Claude Certified Architect – Professional
++Claude Certified Developer – Foundations, Claude Certified Developer – Professional, Claude Certified Architect – Foundations, and Claude Certified Architect – Professional
+ Exams that do not count towards Claude Partner Network eligibility:
