@@ -111,7 +111,7 @@
       "id": "anthropic-news",
       "name": "Anthropic news",
       "url": "https://www.anthropic.com/news",
-      "last_checked": "2026-11-25T12:55Z",
+      "last_checked": "2026-11-26T12:34Z",
       "status": "unchanged",
       "hash": "e3b0c44298fc",
       "last_changed": "2026-11-13T10:58Z"
@@ -120,7 +120,7 @@
       "id": "partner-certifications",
       "name": "Partner Academy: Certifications",
       "url": "https://anthropic-partners.skilljar.com/page/partner-certifications",
-      "last_checked": "2026-11-25T12:55Z",
+      "last_checked": "2026-11-26T12:34Z",
       "status": "unchanged",
       "hash": "e490fa7939e5",
       "last_changed": "2026-11-13T10:58Z"
@@ -129,7 +129,7 @@
       "id": "partner-faq",
       "name": "Partner Academy: Certification FAQ",
       "url": "https://anthropic-partners.skilljar.com/page/faq-certifications",
-      "last_checked": "2026-11-25T12:55Z",
+      "last_checked": "2026-11-26T12:34Z",
       "status": "unchanged",
       "hash": "e13abf625965",
       "last_changed": "2026-11-18T11:42Z"
@@ -138,7 +138,7 @@
       "id": "partner-eligibility",
       "name": "Partner Academy: Eligibility",
       "url": "https://anthropic-partners.skilljar.com/page/certification-eligibility",
-      "last_checked": "2026-11-25T12:55Z",
+      "last_checked": "2026-11-26T12:34Z",
       "status": "unchanged",
       "hash": "b6cc6c649930",
       "last_changed": "2026-11-13T10:58Z"
@@ -147,7 +147,7 @@
       "id": "claude-models",
       "name": "Claude models overview",
       "url": "https://docs.claude.com/en/docs/about-claude/models",
-      "last_checked": "2026-11-25T12:55Z",
+      "last_checked": "2026-11-26T12:34Z",
       "status": "unchanged",
       "hash": "90f18a201dfd",
       "last_changed": "2026-11-14T10:26Z"
@@ -164,5 +164,5 @@
     "content_change": "2026-12-07",
     "deadline": "2026-12-11"
   },
-  "last_checked": "2026-11-25T12:55Z"
+  "last_checked": "2026-11-26T12:34Z"
 }
